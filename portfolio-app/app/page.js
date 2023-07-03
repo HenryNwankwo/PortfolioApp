@@ -3,11 +3,17 @@ import ThemeSwitcher from './themeSwitcher';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <ThemeSwitcher />
-      <p className='dark:bg-red-700 bg-green-900'>
-        Welcome to my portfolio App
-      </p>
+    <main className='flex min-h-screen flex-col items-center p-24'>
+      <header>
+        <nav></nav>
+        <ThemeSwitcher />
+      </header>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <footer></footer>
     </main>
   );
 }
