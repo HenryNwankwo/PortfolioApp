@@ -1,8 +1,12 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Providers from './provider';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({
+  weight: ['300', '400', '500', '600'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: 'Ifunanya Henry Nwankwo Portfolio',
@@ -13,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={`${poppins.className}`}>
         <Providers>{children}</Providers>
       </body>
     </html>
