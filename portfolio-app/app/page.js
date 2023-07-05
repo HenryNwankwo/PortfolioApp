@@ -13,15 +13,12 @@ export default function Home() {
         </nav>
         <ThemeSwitcher />
       </header>
-      <section
-        id='about'
-        className='sm:px-24 px-8 sm:py-16 py-11 w-full outline-1 outline-red-600 outline'
-      >
+      <section id='about' className='sm:px-24 px-8 sm:py-16 py-11 w-full '>
         <div>
           <h1 className='text-white text-3xl'>About</h1>
         </div>
-        <div className='mt-4 flex flex-row'>
-          <span className='block border-t-4 border-solid border-orange-400 sm:w-12 w-24 mt-2 mr-2'></span>
+        <div className='mt-4 flex flex-row w-full outline-1 outline-red-600 outline'>
+          <span className='block border-t-4 border-solid border-orange-400 sm:w-12 w-32 mt-2 mr-2'></span>
           <p className='pa_aboutText '>
             I like to craft solid and scalable frontend products with great user
             experiences. I build accessible, inclusive products and digital
