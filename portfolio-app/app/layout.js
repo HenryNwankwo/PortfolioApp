@@ -1,12 +1,6 @@
 import './globals.css';
-import { Poppins } from 'next/font/google';
+import { poppins } from './fonts';
 import Providers from './provider';
-
-const poppins = Poppins({
-  weight: ['300', '400', '500', '600'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-});
 
 export const metadata = {
   title: 'Ifunanya Henry Nwankwo Portfolio',

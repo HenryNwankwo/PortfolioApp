@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import ThemeSwitcher from './themeSwitcher';
 import Link from 'next/link';
+import { source_Serif_4 } from './fonts';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <ThemeSwitcher />
       </header>
       <section id='about' className='sm:px-24 px-8 sm:py-16 py-11 w-full '>
-        <div>
+        <div className={source_Serif_4.className}>
           <h1 className='text-white text-3xl'>About</h1>
         </div>
         <div className='mt-4 flex flex-row w-full outline-1 outline-red-600 outline'>
