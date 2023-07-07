@@ -28,15 +28,17 @@ export default function Home() {
         </div>
       </section>
       <section id='skills'></section>
-      <section id='portfolio'>
-        <h2 className='text-center'>Portfolio</h2>
-        <div className='flex justify-center items-center md:grid grid-cols-3'>
-          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
-          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
-          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
-          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
-          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
-          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
+      <section id='portfolio' className='my-4'>
+        <div className='text-center py-4 text-2xl'>
+          <h2 className={source_Serif_4.className}>Portfolio</h2>
+        </div>
+        <div className='flex flex-wrap justify-center items-center md:grid md:grid-cols-3 gap-5 m-2'>
+          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
         </div>
       </section>
       <section id='experience'></section>
