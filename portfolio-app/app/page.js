@@ -28,7 +28,17 @@ export default function Home() {
         </div>
       </section>
       <section id='skills'></section>
-      <section id='portfolio'></section>
+      <section id='portfolio'>
+        <h2 className='text-center'>Portfolio</h2>
+        <div className='flex justify-center items-center md:grid grid-cols-3'>
+          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
+          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
+          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
+          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
+          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
+          <div className='w-12 h-12 outline outline-1 outline-red-500'></div>
+        </div>
+      </section>
       <section id='experience'></section>
       <section id='testimonials'></section>
       <footer>
