@@ -6,7 +6,7 @@ import { source_Serif_4 } from './fonts';
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center w-full h-auto'>
-      <header>
+      <header className='w-full h-20'>
         <nav>
           <Link href='#about'>About</Link>
           <Link href='#portfolio'>Portfolio</Link>
