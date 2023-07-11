@@ -14,6 +14,9 @@ export default function Home() {
         </nav>
         <ThemeSwitcher />
       </header>
+
+      {/* The About section */}
+
       <section id='about' className='sm:px-24 px-8 sm:py-16 py-11 w-full '>
         <div className={source_Serif_4.className}>
           <h1 className='text-white text-3xl'>About</h1>
@@ -27,17 +30,41 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* The Skills section */}
+
       <section
         id='skills'
-        className='w-full sm:px-24 px-8 flex flex-wrap gap-2 justify-center items-center'
+        className='w-full sm:px-24 px-8 flex flex-wrap gap-6 justify-center items-center'
       >
-        <div className='rounded w-10 h-10 bg-gray-800'></div>
-        <div className='rounded w-10 h-10 bg-gray-800'></div>
-        <div className='rounded w-10 h-10 bg-gray-800'></div>
-        <div className='rounded w-10 h-10 bg-gray-800'></div>
-        <div className='rounded w-10 h-10 bg-gray-800'></div>
-        <div className='rounded w-10 h-10 bg-gray-800'></div>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+          <Image alt='Skill Image'></Image>
+          <p className='font-medium'>Skill Name</p>
+        </div>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+          <Image alt='Skill Image'></Image>
+          <p className='font-medium'>Skill Name</p>
+        </div>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+          <Image alt='Skill Image'></Image>
+          <p className='font-medium'>Skill Name</p>
+        </div>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+          <Image alt='Skill Image'></Image>
+          <p className='font-medium'>Skill Name</p>
+        </div>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+          <Image alt='Skill Image'></Image>
+          <p className='font-medium'>Skill Name</p>
+        </div>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+          <Image alt='Skill Image'></Image>
+          <p className='font-medium'>Skill Name</p>
+        </div>
       </section>
+
+      {/* The Portfolio section */}
+
       <section id='portfolio' className='my-4'>
         <div className='text-center py-4 text-2xl'>
           <h2 className={source_Serif_4.className}>Portfolio</h2>
@@ -51,8 +78,15 @@ export default function Home() {
           <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
         </div>
       </section>
+
+      {/* The Experience section */}
+
       <section id='experience'></section>
+
+      {/* The Testimonials section */}
+
       <section id='testimonials'></section>
+
       <footer>
         <section id='contact'></section>
       </footer>
