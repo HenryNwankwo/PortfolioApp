@@ -37,27 +37,27 @@ export default function Home() {
         id='skills'
         className='w-full sm:px-24 px-8 flex flex-wrap gap-6 justify-center items-center'
       >
-        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-orange-400'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-orange-400'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-orange-400'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-orange-400'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-orange-400'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col'>
+        <div className='rounded-md w-44 h-44 bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-orange-400'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
