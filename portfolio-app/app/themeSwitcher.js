@@ -1,6 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSunBright, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 export default function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -16,9 +18,11 @@ export default function ThemeSwitcher() {
 
   return (
     <>
-      <div>The current theme is {theme}</div>
-      <button onClick={() => setTheme('light')}>Light Mode</button>
-      <button onClick={() => setTheme('dark')}>Dark Mode</button>
+      {theme == 'light' ? (
+        <FontAwesomeIcon icon={faMoon} size='2x' border />
+      ) : (
+        <FontAwesomeIcon icon={faSunBright} size='2x' />
+      )}
     </>
   );
 }

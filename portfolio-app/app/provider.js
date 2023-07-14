@@ -12,7 +12,7 @@ function Providers({ children }) {
     return <>{children}</>;
   }
 
-  return <ThemeProvider attribute='class'>{children}</ThemeProvider>;
+  return <ThemeProvider>{children}</ThemeProvider>;
 }
 
 export default Providers;
