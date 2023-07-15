@@ -23,9 +23,13 @@ export default function ThemeSwitcher() {
       onClick={themeSwitchHandler}
     >
       {theme === 'dark' ? (
-        <FontAwesomeIcon icon={faSun} size='2x' />
+        <FontAwesomeIcon
+          icon={faSun}
+          size='lg'
+          className='dark:text-orange-400'
+        />
       ) : (
-        <FontAwesomeIcon icon={faMoon} size='2x' />
+        <FontAwesomeIcon icon={faMoon} size='lg' />
       )}
     </button>
   );

@@ -5,12 +5,23 @@ import { source_Serif_4 } from './fonts';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl dark:bg-slate-900 dark:text-white'>
-      <header className='w-full h-20'>
+    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white'>
+      <header className='w-full h-20 sm:px-24 px-8 flex items-center justify-between dark:text-slate-400 dark:bg-slate-800'>
+        <div>
+          <Link href='/'>
+            <Image alt='Logo'></Image>
+          </Link>
+        </div>
         <nav>
-          <Link href='#about'>About</Link>
-          <Link href='#portfolio'>Portfolio</Link>
-          <Link href='#contact'>Contact</Link>
+          <Link href='#about' className='px-3'>
+            About
+          </Link>
+          <Link href='#portfolio' className='px-3'>
+            Portfolio
+          </Link>
+          <Link href='#contact' className='px-3'>
+            Contact
+          </Link>
         </nav>
         <ThemeSwitcher />
       </header>
