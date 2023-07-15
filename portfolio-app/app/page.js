@@ -5,7 +5,7 @@ import { source_Serif_4 } from './fonts';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl'>
+    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl dark:bg-slate-900 dark:text-white'>
       <header className='w-full h-20'>
         <nav>
           <Link href='#about'>About</Link>
@@ -19,7 +19,7 @@ export default function Home() {
 
       <section id='about' className='sm:px-24 px-8 sm:py-16 py-11 w-full '>
         <div className={source_Serif_4.className}>
-          <h1 className='text-white text-3xl'>About</h1>
+          <h1 className='dark:text-white text-3xl'>About</h1>
         </div>
         <div className='mt-4 flex flex-row w-full'>
           <span className='block border-t-4 border-solid border-green-500 dark:border-orange-400 sm:w-12 w-32 mt-2 mr-2'></span>

@@ -1,6 +1,6 @@
 import './globals.css';
 import { poppins } from './fonts';
-import Providers from './provider';
+//import Providers from './provider';
 
 export const metadata = {
   title: 'Ifunanya Henry Nwankwo Portfolio',
@@ -10,9 +10,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang='en' className='dark'>
       <body className={`${poppins.className}`}>
-        <Providers>{children}</Providers>
+        {children}
+        {/* <Providers>{children}</Providers> */}
       </body>
     </html>
   );
