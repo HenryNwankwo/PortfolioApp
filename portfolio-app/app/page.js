@@ -5,7 +5,7 @@ import { source_Serif_4 } from './fonts';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white'>
+    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white transition-all transform-gpu'>
       <header className='w-full h-20 sm:px-24 px-8 flex items-center justify-between dark:text-slate-400 dark:bg-slate-800'>
         <div>
           <Link href='/'>
@@ -13,13 +13,13 @@ export default function Home() {
           </Link>
         </div>
         <nav>
-          <Link href='#about' className='px-3'>
+          <Link href='#about' className='ptf-nav-links'>
             About
           </Link>
-          <Link href='#portfolio' className='px-3'>
+          <Link href='#portfolio' className='ptf-nav-links'>
             Portfolio
           </Link>
-          <Link href='#contact' className='px-3'>
+          <Link href='#contact' className='ptf-nav-links'>
             Contact
           </Link>
         </nav>
@@ -48,27 +48,27 @@ export default function Home() {
         id='skills'
         className='w-full sm:px-24 px-8 flex flex-wrap gap-6 justify-center items-center'
       >
-        <div className='rounded-md w-44 h-44 shadow-md shadow-gray-200 dark:shadow-none bg-gray-100 dark:bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-green-200 dark:hover:bg-orange-400'>
+        <div className='ptf-skills-box'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 shadow-md shadow-gray-200 dark:shadow-none bg-gray-100 dark:bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-green-200  dark:hover:bg-orange-400'>
+        <div className='ptf-skills-box'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 shadow-md shadow-gray-200 dark:shadow-none bg-gray-100 dark:bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-green-200  dark:hover:bg-orange-400'>
+        <div className='ptf-skills-box'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 shadow-md shadow-gray-200 dark:shadow-none bg-gray-100 dark:bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-green-200  dark:hover:bg-orange-400'>
+        <div className='ptf-skills-box'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 shadow-md shadow-gray-200 dark:shadow-none bg-gray-100 dark:bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-green-200  dark:hover:bg-orange-400'>
+        <div className='ptf-skills-box'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
-        <div className='rounded-md w-44 h-44 shadow-md shadow-gray-200 dark:shadow-none bg-gray-100 dark:bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-green-200  dark:hover:bg-orange-400'>
+        <div className='ptf-skills-box'>
           <Image alt='Skill Image'></Image>
           <p className='font-medium'>Skill Name</p>
         </div>
