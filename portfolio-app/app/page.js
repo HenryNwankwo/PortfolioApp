@@ -82,6 +82,7 @@ export default function Home() {
         </div>
         <div className='flex flex-wrap justify-center items-center md:grid md:grid-cols-3 gap-5 m-2'>
           <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group'>
+            {/* Contains the info about a portfolio project */}
             <div className='w-full h-full rounded-md bg-gray-400 bg-opacity-20 flex-col justify-center items-center gap-2 p-2 hidden group-hover:flex'>
               <h3 className='text-xl'>Project Name</h3>
               <p className='text-xs text-center'>
@@ -90,7 +91,7 @@ export default function Home() {
                 Dolorum alias aliquam ratione eius labore! Esse aliquid sunt
                 provident adipisci ab soluta laborum nihil dolorum?
               </p>
-              <button className='py-2 px-4 rounded-full bg-orange-400 text-black text-sm'>
+              <button className='py-2 px-4 rounded-full bg-green-500 text-white dark:bg-orange-400 dark:text-black text-sm'>
                 See more!{' '}
               </button>
             </div>
