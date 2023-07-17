@@ -81,12 +81,25 @@ export default function Home() {
           <h2 className={source_Serif_4.className}>Portfolio</h2>
         </div>
         <div className='flex flex-wrap justify-center items-center md:grid md:grid-cols-3 gap-5 m-2'>
-          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
-          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
-          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
-          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
-          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
-          <div className='w-60 h-60 outline outline-1 outline-red-500 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group'>
+            <div className='w-full h-full rounded-md bg-gray-400 bg-opacity-20 flex-col justify-center items-center gap-2 p-2 hidden group-hover:flex'>
+              <h3 className='text-xl'>Project Name</h3>
+              <p className='text-xs text-center'>
+                Project description Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. At ea atque harum accusantium distinctio?
+                Dolorum alias aliquam ratione eius labore! Esse aliquid sunt
+                provident adipisci ab soluta laborum nihil dolorum?
+              </p>
+              <button className='py-2 px-4 rounded-full bg-orange-400 text-black text-sm'>
+                See more!{' '}
+              </button>
+            </div>
+          </div>
+          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
         </div>
       </section>
 

@@ -14,9 +14,11 @@ export default function ThemeSwitcher() {
     }
   }, [theme]);
 
+  // Switches the theme from the previous theme to the selected theme
   const themeSwitchHandler = () => {
     setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
+
   return (
     <button
       className='w-12 h-12 flex justify-center items-center'
