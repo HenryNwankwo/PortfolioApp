@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { HiMiniSun } from 'react-icons/hi2';
+import { BsMoonStarsFill } from 'react-icons/bs';
 
 export default function ThemeSwitcher() {
   const [theme, setTheme] = useState('dark');
@@ -21,17 +21,13 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className='w-12 h-12 flex justify-center items-center'
+      className='p-2 flex justify-center items-center'
       onClick={themeSwitchHandler}
     >
       {theme === 'dark' ? (
-        <FontAwesomeIcon
-          icon={faSun}
-          size='lg'
-          className='dark:text-orange-400'
-        />
+        <BsMoonStarsFill className='dark:text-orange-400 text-xl dark:hover:text-orange-300' />
       ) : (
-        <FontAwesomeIcon icon={faMoon} size='lg' />
+        <HiMiniSun className='text-green-500 dark:text-orange-400 text-2xl hover:text-gray-500' />
       )}
     </button>
   );

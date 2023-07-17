@@ -2,12 +2,13 @@ import Image from 'next/image';
 import ThemeSwitcher from './themeSwitcher';
 import Link from 'next/link';
 import { source_Serif_4 } from './fonts';
+import { HiOutlineExternalLink } from 'react-icons/hi';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white transition-all transform-gpu'>
-      <header className='w-full h-20 sm:px-24 px-8 flex items-center justify-between dark:text-slate-400 dark:bg-slate-800'>
-        <div>
+    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white transition-all transform-gpu relative'>
+      <header className='w-full h-20 sm:px-24 px-8 flex items-center justify-between dark:text-slate-400 bg-slate-50 dark:bg-slate-800 sticky top-0 right-0 left-0 z-50 shadow-lg shadow-transparent'>
+        <div className=''>
           <Link href='/'>
             <Image alt='Logo'></Image>
           </Link>
@@ -81,7 +82,7 @@ export default function Home() {
           <h2 className={source_Serif_4.className}>Portfolio</h2>
         </div>
         <div className='flex flex-wrap justify-center items-center md:grid md:grid-cols-3 gap-5 m-2'>
-          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group transition-all transform duration-300'>
+          <div className='w-60 h-60 shadow-xl shadow-transparent dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group transition-all transform duration-300'>
             {/* Contains the info about a portfolio project */}
             <div className='w-full h-full rounded-md bg-gray-400 bg-opacity-20 flex-col justify-center items-center gap-2 p-2 hidden group-hover:flex transition-all transform duration-300'>
               <h3 className='text-xl'>Project Name</h3>
@@ -91,16 +92,20 @@ export default function Home() {
                 Dolorum alias aliquam ratione eius labore! Esse aliquid sunt
                 provident adipisci ab soluta laborum nihil dolorum?
               </p>
-              <button className='py-2 px-4 rounded-full bg-green-500 text-white dark:bg-orange-400 dark:text-black text-sm'>
-                See more!{' '}
-              </button>
+              <Link
+                href='/'
+                target='_blank'
+                className='py-2 px-4 rounded-full bg-green-500 text-white dark:bg-orange-400 dark:text-black text-sm hover:bg-green-400 flex'
+              >
+                See more! <HiOutlineExternalLink className='text-lg ml-1' />
+              </Link>
             </div>
           </div>
-          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
-          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
-          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
-          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
-          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-xl shadow-transparent dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-xl shadow-transparent dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-xl shadow-transparent dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-xl shadow-transparent dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
+          <div className='w-60 h-60 shadow-xl shadow-transparent dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer'></div>
         </div>
       </section>
 
