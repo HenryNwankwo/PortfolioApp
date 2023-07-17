@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* header styles */
+
+.ptf-nav-links {
+  @apply px-3 py-1 hover:border-b-2 hover:border-orange-400 hover:text-white hover:transition-all hover:transform-gpu;
+}
+
+/* Skills Section Styles */
+
+.ptf-skills-box {
+  @apply rounded-md w-44 h-44 shadow-md shadow-gray-200 dark:shadow-none bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-green-200  dark:hover:bg-orange-400 hover:transition-all hover:transform-gpu duration-200;
+}
