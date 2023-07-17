@@ -81,9 +81,9 @@ export default function Home() {
           <h2 className={source_Serif_4.className}>Portfolio</h2>
         </div>
         <div className='flex flex-wrap justify-center items-center md:grid md:grid-cols-3 gap-5 m-2'>
-          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group'>
+          <div className='w-60 h-60 shadow-md shadow-gray-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group transition-all transform duration-300'>
             {/* Contains the info about a portfolio project */}
-            <div className='w-full h-full rounded-md bg-gray-400 bg-opacity-20 flex-col justify-center items-center gap-2 p-2 hidden group-hover:flex'>
+            <div className='w-full h-full rounded-md bg-gray-400 bg-opacity-20 flex-col justify-center items-center gap-2 p-2 hidden group-hover:flex transition-all transform duration-300'>
               <h3 className='text-xl'>Project Name</h3>
               <p className='text-xs text-center'>
                 Project description Lorem ipsum dolor, sit amet consectetur
