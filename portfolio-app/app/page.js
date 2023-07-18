@@ -123,13 +123,13 @@ export default function Home() {
         <div className={source_Serif_4.className}>
           <h1 className='dark:text-white text-3xl'>Experience</h1>
         </div>
-        <div className='flex flex-col items-center justify-center'>
-          <div className='w-full h-auto min-h-fit flex flex-col items-center justify-center'>
-            <div className='bg-green-500 dark:bg-orange-400 py-1 px-3 text-white shadow-lg shadow-transparent'>
+        <div className='w-2/3 flex flex-col items-center justify-center m-auto'>
+          <div className='w-full h-auto min-h-fit flex items-center justify-center'>
+            <div className='bg-green-500 dark:bg-orange-400 py-1 px-3 text-white shadow-lg shadow-transparent relative rounded-full mr-2 ptf-year-tagTriangle'>
               <p>2023</p>
             </div>
-            <div className='flex flex-col w-4 h-auto bg-red-200'>
-              <span className='block w-3 h-3 rounded-full bg-green-500 dark:bg-orange-400'></span>
+            <div className='flex flex-col p-1 m-1 h-auto'>
+              <span className='block w-6 h-6 rounded-full bg-green-500 dark:bg-orange-400 shadow-xl shadow-green-500 dark:shadow-orange-400'></span>
               <span className='block border-l-2 border-solid border-green-500 dark:border-orange-400'></span>
             </div>
             <div>

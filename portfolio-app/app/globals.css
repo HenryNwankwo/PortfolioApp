@@ -14,8 +14,14 @@
   @apply rounded-md w-44 h-44 shadow-lg shadow-transparent dark:shadow-none bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-green-200  dark:hover:bg-orange-400 hover:transition-all hover:transform-gpu duration-200;
 }
 
-/* primary Scetion styles */
+/* primary Section styles */
 
 .ptf-pri-section {
   @apply w-full h-auto sm:px-24 px-8 sm:py-16 py-11 pt-24;
+}
+
+/* Experience Section Styles */
+
+.ptf-year-tagTriangle {
+  @apply before:absolute before:w-0 before:h-0 before:border-t-4 before:border-b-4 before:border-transparent before:border-solid  before:border-l-8 before:border-l-green-400 dark:before:border-l-orange-400 before:-right-1.5 before:top-3;
 }
