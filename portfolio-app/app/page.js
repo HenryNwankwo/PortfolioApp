@@ -88,7 +88,7 @@ export default function Home() {
         </div>
         <div className='w-fit flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:justify-items-center md:content-center gap-5 m-2'>
           <div className='w-60 h-60 shadow-xl shadow-transparent dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group transition-all transform duration-300'>
-            {/* Contains the info about a portfolio project */}
+            {/* Contains the info about a portfolio project or card */}
             <div className='w-full h-full rounded-md bg-gray-400 bg-opacity-20 flex-col justify-center items-center gap-2 p-2 hidden group-hover:flex transition-all transform duration-300'>
               <h3 className='text-xl'>Project Name</h3>
               <p className='text-xs text-center'>
@@ -118,26 +118,57 @@ export default function Home() {
 
       <section
         id='experience'
-        className='ptf-pri-section bg-slate-50 dark:bg-gray-800'
+        className='ptf-pri-section bg-slate-50 dark:bg-gray-800 shadow-xl shadow-transparent'
       >
         <div className={source_Serif_4.className}>
           <h1 className='dark:text-white text-3xl'>Experience</h1>
         </div>
+
+        {/* Experience Container */}
+
         <div className='w-2/3 flex flex-col items-center justify-center mx-auto my-4'>
-          <div className='w-full h-auto min-h-fit flex justify-center my-1 '>
-            <div className='bg-green-500 dark:bg-orange-400 py-1 px-3 h-fit text-white shadow-lg shadow-transparent relative rounded-full mr-2 ptf-year-tagTriangle'>
+          {/* Experience Card group */}
+
+          <div className='w-full h-auto min-h-fit flex justify-center my-4 '>
+            <div className='bg-gradient-to-b from-green-500 to-blue-500 dark:bg-orange-400 py-1 px-3 h-fit text-white shadow-lg shadow-transparent relative rounded-full mr-2 ptf-year-tagTriangle'>
               <p>2023</p>
             </div>
-            <div className='flex flex-col p-1 h-auto mx-2'>
+            <div className='flex flex-col p-1 h-auto mx-2 items-center'>
               <span className='block w-6 h-6 rounded-full bg-green-500 dark:bg-orange-400 shadow-xl shadow-green-500 dark:shadow-orange-400'></span>
-              <span className='block border-l-2 border-solid border-green-500 dark:border-orange-400'></span>
+              <span className='block w-0.5 min-h-20 h-auto mt-1 mx-auto rounded bg-gradient-to-b from-green-500 to-red-500 dark:bg-gray-300'></span>
             </div>
-            <div className='ml-2'>
-              <h3 className='font-medium text-2xl'>
+            <div className='ml-2 relative'>
+              <h3 className='font-medium text-2xl text-green-400'>
                 Senior Software Developer
               </h3>
-              <p>Toronto, Canada</p>
-              <p className='mt-3 text-xs'>
+              <p className='text-red-400 dark:text-yellow-200'>
+                Toronto, Canada
+              </p>
+              <p className='mt-3 text-xs dark:text-gray-300'>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+                accusamus magni dignissimos, accusantium quae unde quis, sed
+                quaerat laudantium tempora quas reiciendis quia est saepe eos
+                aliquid harum corrupti molestias.
+              </p>
+            </div>
+          </div>
+
+          <div className='w-full h-auto min-h-fit flex justify-center my-4 '>
+            <div className='bg-gradient-to-b from-green-500 to-blue-500 dark:bg-orange-400 py-1 px-3 h-fit text-white shadow-lg shadow-transparent relative rounded-full mr-2 ptf-year-tagTriangle'>
+              <p>2023</p>
+            </div>
+            <div className='flex flex-col p-1 h-full mx-2 items-center'>
+              <span className='block w-6 h-6 rounded-full bg-green-500 dark:bg-orange-400 shadow-xl shadow-green-500 dark:shadow-orange-400'></span>
+              <span className='block w-0.5 min-h-20 h-auto mt-1 mx-auto rounded bg-gradient-to-b from-green-500 to-red-500 dark:bg-gray-300'></span>
+            </div>
+            <div className='ml-2 relative'>
+              <h3 className='font-medium text-2xl text-green-400'>
+                Senior Software Developer
+              </h3>
+              <p className='text-red-400 dark:text-yellow-200'>
+                Toronto, Canada
+              </p>
+              <p className='mt-3 text-xs dark:text-gray-300'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
                 accusamus magni dignissimos, accusantium quae unde quis, sed
                 quaerat laudantium tempora quas reiciendis quia est saepe eos
