@@ -23,7 +23,7 @@
 /* Experience Section Styles */
 
 .ptf-year-tagTriangle {
-  @apply before:absolute before:w-0 before:h-0 before:border-t-4 before:border-b-4 before:border-transparent before:border-solid  before:border-l-8 before:border-l-green-400 dark:before:border-l-orange-400 before:-right-1.5 before:top-3;
+  @apply before:absolute before:w-0 before:h-0 before:border-t-4 before:border-b-4 before:border-transparent before:border-solid  before:border-l-8 before:border-l-green-400 dark:before:border-l-orange-400 before:-right-1.5 before:top-2 sm:before:top-3 before:z-0;
 }
 
 .ptf-experience-circle {
