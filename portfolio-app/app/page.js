@@ -123,19 +123,21 @@ export default function Home() {
         <div className={source_Serif_4.className}>
           <h1 className='dark:text-white text-3xl'>Experience</h1>
         </div>
-        <div className='w-2/3 flex flex-col items-center justify-center m-auto'>
-          <div className='w-full h-auto min-h-fit flex items-center justify-center'>
-            <div className='bg-green-500 dark:bg-orange-400 py-1 px-3 text-white shadow-lg shadow-transparent relative rounded-full mr-2 ptf-year-tagTriangle'>
+        <div className='w-2/3 flex flex-col items-center justify-center mx-auto my-4'>
+          <div className='w-full h-auto min-h-fit flex justify-center my-1 '>
+            <div className='bg-green-500 dark:bg-orange-400 py-1 px-3 h-fit text-white shadow-lg shadow-transparent relative rounded-full mr-2 ptf-year-tagTriangle'>
               <p>2023</p>
             </div>
-            <div className='flex flex-col p-1 m-1 h-auto'>
+            <div className='flex flex-col p-1 h-auto mx-2'>
               <span className='block w-6 h-6 rounded-full bg-green-500 dark:bg-orange-400 shadow-xl shadow-green-500 dark:shadow-orange-400'></span>
               <span className='block border-l-2 border-solid border-green-500 dark:border-orange-400'></span>
             </div>
-            <div>
-              <h3>Senior Software Developer</h3>
+            <div className='ml-2'>
+              <h3 className='font-medium text-2xl'>
+                Senior Software Developer
+              </h3>
               <p>Toronto, Canada</p>
-              <p>
+              <p className='mt-3 text-xs'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
                 accusamus magni dignissimos, accusantium quae unde quis, sed
                 quaerat laudantium tempora quas reiciendis quia est saepe eos
