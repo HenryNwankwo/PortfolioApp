@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* The About section */}
 
-      <section id='about' className='sm:px-24 px-8 sm:py-16 py-11 w-full '>
+      <section id='about' className='ptf-pri-section'>
         <div className={source_Serif_4.className}>
           <h1 className='dark:text-white text-3xl'>About</h1>
         </div>
@@ -45,43 +45,48 @@ export default function Home() {
 
       {/* The Skills section */}
 
-      <section
-        id='skills'
-        className='w-full sm:px-24 px-8 flex flex-wrap gap-6 justify-center items-center'
-      >
-        <div className='ptf-skills-box'>
-          <Image alt='Skill Image'></Image>
-          <p className='font-medium'>Skill Name</p>
+      <section id='skills' className='py-4'>
+        <div className='text-center py-4 text-2xl'>
+          <h2 className={source_Serif_4.className}>My Skills</h2>
         </div>
-        <div className='ptf-skills-box'>
-          <Image alt='Skill Image'></Image>
-          <p className='font-medium'>Skill Name</p>
-        </div>
-        <div className='ptf-skills-box'>
-          <Image alt='Skill Image'></Image>
-          <p className='font-medium'>Skill Name</p>
-        </div>
-        <div className='ptf-skills-box'>
-          <Image alt='Skill Image'></Image>
-          <p className='font-medium'>Skill Name</p>
-        </div>
-        <div className='ptf-skills-box'>
-          <Image alt='Skill Image'></Image>
-          <p className='font-medium'>Skill Name</p>
-        </div>
-        <div className='ptf-skills-box'>
-          <Image alt='Skill Image'></Image>
-          <p className='font-medium'>Skill Name</p>
+        <div className='w-full sm:px-24 px-8 flex flex-wrap gap-6 justify-center items-center my-2'>
+          <div className='ptf-skills-box'>
+            <Image alt='Skill Image'></Image>
+            <p className='font-medium'>Skill Name</p>
+          </div>
+          <div className='ptf-skills-box'>
+            <Image alt='Skill Image'></Image>
+            <p className='font-medium'>Skill Name</p>
+          </div>
+          <div className='ptf-skills-box'>
+            <Image alt='Skill Image'></Image>
+            <p className='font-medium'>Skill Name</p>
+          </div>
+          <div className='ptf-skills-box'>
+            <Image alt='Skill Image'></Image>
+            <p className='font-medium'>Skill Name</p>
+          </div>
+          <div className='ptf-skills-box'>
+            <Image alt='Skill Image'></Image>
+            <p className='font-medium'>Skill Name</p>
+          </div>
+          <div className='ptf-skills-box'>
+            <Image alt='Skill Image'></Image>
+            <p className='font-medium'>Skill Name</p>
+          </div>
         </div>
       </section>
 
       {/* The Portfolio section */}
 
-      <section id='portfolio' className='my-4'>
+      <section
+        id='portfolio'
+        className='w-full h-auto py-20 flex flex-col items-center'
+      >
         <div className='text-center py-4 text-2xl'>
           <h2 className={source_Serif_4.className}>Portfolio</h2>
         </div>
-        <div className='flex flex-wrap justify-center items-center md:grid md:grid-cols-3 gap-5 m-2'>
+        <div className='w-fit flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:justify-items-center md:content-center gap-5 m-2'>
           <div className='w-60 h-60 shadow-xl shadow-transparent dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group transition-all transform duration-300'>
             {/* Contains the info about a portfolio project */}
             <div className='w-full h-full rounded-md bg-gray-400 bg-opacity-20 flex-col justify-center items-center gap-2 p-2 hidden group-hover:flex transition-all transform duration-300'>
@@ -111,7 +116,35 @@ export default function Home() {
 
       {/* The Experience section */}
 
-      <section id='experience'></section>
+      <section
+        id='experience'
+        className='ptf-pri-section bg-slate-50 dark:bg-gray-800'
+      >
+        <div className={source_Serif_4.className}>
+          <h1 className='dark:text-white text-3xl'>Experience</h1>
+        </div>
+        <div className='flex flex-col items-center justify-center'>
+          <div className='w-full h-auto min-h-fit flex flex-col items-center justify-center'>
+            <div className='bg-green-500 dark:bg-orange-400 py-1 px-3 text-white shadow-lg shadow-transparent'>
+              <p>2023</p>
+            </div>
+            <div className='flex flex-col w-4 h-auto bg-red-200'>
+              <span className='block w-3 h-3 rounded-full bg-green-500 dark:bg-orange-400'></span>
+              <span className='block border-l-2 border-solid border-green-500 dark:border-orange-400'></span>
+            </div>
+            <div>
+              <h3>Senior Software Developer</h3>
+              <p>Toronto, Canada</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+                accusamus magni dignissimos, accusantium quae unde quis, sed
+                quaerat laudantium tempora quas reiciendis quia est saepe eos
+                aliquid harum corrupti molestias.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* The Testimonials section */}
 

@@ -13,3 +13,9 @@
 .ptf-skills-box {
   @apply rounded-md w-44 h-44 shadow-lg shadow-transparent dark:shadow-none bg-gray-50 dark:bg-gray-800 flex justify-center items-center flex-col hover:cursor-pointer hover:text-black hover:bg-green-200  dark:hover:bg-orange-400 hover:transition-all hover:transform-gpu duration-200;
 }
+
+/* primary Scetion styles */
+
+.ptf-pri-section {
+  @apply w-full h-auto sm:px-24 px-8 sm:py-16 py-11 pt-24;
+}

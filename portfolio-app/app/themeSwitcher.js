@@ -25,9 +25,9 @@ export default function ThemeSwitcher() {
       onClick={themeSwitchHandler}
     >
       {theme === 'dark' ? (
-        <BsMoonStarsFill className='dark:text-orange-400 text-xl dark:hover:text-orange-300' />
+        <HiMiniSun className='dark:text-orange-400 text-2xl dark:hover:text-orange-300' />
       ) : (
-        <HiMiniSun className='text-green-500 dark:text-orange-400 text-2xl hover:text-gray-500' />
+        <BsMoonStarsFill className='text-green-500 dark:text-orange-400 text-xl hover:text-gray-500' />
       )}
     </button>
   );
