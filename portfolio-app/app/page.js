@@ -2,7 +2,13 @@ import Image from 'next/image';
 import ThemeSwitcher from './themeSwitcher';
 import Link from 'next/link';
 import { source_Serif_4 } from './fonts';
-import { HiOutlineExternalLink } from 'react-icons/hi';
+import {
+  HiLocationMarker,
+  HiMail,
+  HiOutlineExternalLink,
+  HiPhone,
+} from 'react-icons/hi';
+import { BsFacebook, BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 
 export default function Home() {
   return (
@@ -183,8 +189,41 @@ export default function Home() {
 
       <section id='testimonials'></section>
 
+      {/* Contact me section */}
+      <section id='contact'>
+        <div>
+          <span></span>
+          <div className='text-center py-4 text-3xl'>
+            <h2 className={source_Serif_4.className}>Contact Me</h2>
+          </div>
+          <span></span>
+        </div>
+        <div>
+          <button>
+            <HiMail /> mymail@gmail.com{' '}
+          </button>
+          <button>
+            <HiPhone />{' '}
+          </button>
+          <button>
+            <HiLocationMarker />{' '}
+          </button>
+        </div>
+        <div>
+          <span></span>
+          <div>
+            <BsFacebook /> <BsTwitter /> <BsLinkedin /> <BsWhatsapp />{' '}
+          </div>
+          <span></span>
+        </div>
+      </section>
+
       <footer>
-        <section id='contact'></section>
+        <div>
+          <p>
+            <q>Thanks for Scrolling</q>
+          </p>
+        </div>
       </footer>
     </main>
   );
