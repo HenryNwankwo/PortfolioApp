@@ -37,7 +37,9 @@ export default function Home() {
 
       <section id='about' className='ptf-pri-section'>
         <div className={source_Serif_4.className}>
-          <h1 className='dark:text-white text-3xl'>About</h1>
+          <h1 className='dark:text-white text-3xl sm:text-5xl font-bold'>
+            About
+          </h1>
         </div>
         <div className='mt-4 flex flex-row w-full'>
           <span className='block border-t-4 border-solid border-green-500 dark:border-orange-400 sm:w-12 w-32 mt-2 mr-2'></span>
@@ -52,7 +54,7 @@ export default function Home() {
       {/* The Skills section */}
 
       <section id='skills' className='py-4'>
-        <div className='text-center py-4 text-2xl'>
+        <div className='text-center py-4 text-2xl sm:text-3xl font-bold'>
           <h2 className={source_Serif_4.className}>My Skills</h2>
         </div>
         <div className='w-full sm:px-24 px-8 flex flex-wrap gap-6 justify-center items-center my-2'>
@@ -89,7 +91,7 @@ export default function Home() {
         id='portfolio'
         className='w-full h-auto py-20 flex flex-col items-center'
       >
-        <div className='text-center py-4 text-2xl'>
+        <div className='text-center py-4 text-2xl sm:text-3xl font-bold'>
           <h2 className={source_Serif_4.className}>Portfolio</h2>
         </div>
         <div className='w-fit flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:justify-items-center md:content-center gap-5 m-2'>
@@ -127,7 +129,9 @@ export default function Home() {
         className='ptf-pri-section bg-slate-50 dark:bg-gray-800 shadow-xl shadow-transparent'
       >
         <div className={source_Serif_4.className}>
-          <h1 className='dark:text-white text-3xl'>Experience</h1>
+          <h1 className='dark:text-white text-3xl sm:text-5xl font-bold'>
+            Experience
+          </h1>
         </div>
 
         {/* Experience Container */}
@@ -193,7 +197,7 @@ export default function Home() {
       <section id='contact'>
         <div>
           <span></span>
-          <div className='text-center py-4 text-3xl'>
+          <div className='text-center py-4 text-3xl sm:text-5xl font-bold'>
             <h2 className={source_Serif_4.className}>Contact Me</h2>
           </div>
           <span></span>
