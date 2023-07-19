@@ -194,13 +194,16 @@ export default function Home() {
       <section id='testimonials'></section>
 
       {/* Contact me section */}
-      <section id='contact'>
-        <div>
-          <span></span>
-          <div className='text-center py-4 text-3xl sm:text-5xl font-bold'>
+      <section
+        id='contact'
+        className='ptf-pri-section flex flex-col items-center relative bg-slate-50 dark:bg-gray-800'
+      >
+        <div className='flex justify-between w-full items-center absolute -top-8 sm:-top-10'>
+          <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>
+          <div className='text-center py-4 text-2xl sm:text-4xl md:text-5xl font-bold w-fit p-2'>
             <h2 className={source_Serif_4.className}>Contact Me</h2>
           </div>
-          <span></span>
+          <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>
         </div>
         <div>
           <button>
@@ -213,16 +216,16 @@ export default function Home() {
             <HiLocationMarker />{' '}
           </button>
         </div>
-        <div>
-          <span></span>
-          <div>
+        <div className='flex justify-between w-full items-center absolute -bottom-2 sm:-bottom-2'>
+          <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>
+          <div className='flex items-center justify-center gap-3'>
             <BsFacebook /> <BsTwitter /> <BsLinkedin /> <BsWhatsapp />{' '}
           </div>
-          <span></span>
+          <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>
         </div>
       </section>
 
-      <footer>
+      <footer className='p-5'>
         <div>
           <p>
             <q>Thanks for Scrolling</q>
