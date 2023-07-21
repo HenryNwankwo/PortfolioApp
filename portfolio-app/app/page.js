@@ -18,7 +18,7 @@ import {
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white transition-all transform-gpu relative'>
+    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white transition-all transform-gpu relative mx-auto'>
       <header className='w-full h-20 sm:px-24 px-8 flex items-center justify-between dark:text-slate-400 bg-slate-50 dark:bg-slate-800 sticky top-0 right-0 left-0 z-50 shadow-lg shadow-transparent'>
         <div className=''>
           <Link href='/'>
@@ -248,10 +248,20 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className='p-5'>
-        <div>
-          <p>
+      <footer className='w-full h-auto mt-3 text-slate-800'>
+        <div className='p-10 w-full'>
+          <p className='text-center text-3xl dark:text-yellow-400'>
             <q>Thanks for Scrolling</q>
+          </p>
+        </div>
+        <div className='w-full flex flex-col sm:flex-row gap-3 items-center justify-center py-10'>
+          <div className=''>
+            <Link href='/'>
+              <Image alt='Logo'></Image>
+            </Link>
+          </div>
+          <p className='text-sm dark:text-slate-300'>
+            Copyright &copy; {new Date().getFullYear()}. All Rights Reserved.
           </p>
         </div>
       </footer>
