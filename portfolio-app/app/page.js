@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import ThemeSwitcher from './themeSwitcher';
 import Link from 'next/link';
-import { source_Serif_4 } from './fonts';
+import { source_Serif_4, dancing_script } from './fonts';
 import {
   HiArrowUp,
   HiLocationMarker,
@@ -255,11 +255,11 @@ export default function Home() {
 
       <footer className='w-full h-auto mt-3 text-slate-800'>
         <div className='p-10 w-full'>
-          <p className='text-center text-3xl dark:text-yellow-400'>
-            <q>Thanks for Scrolling</q>
+          <p className='text-center text-4xl text-green-500 dark:text-yellow-400'>
+            <q className={dancing_script.className}>Thanks for Scrolling</q>
           </p>
         </div>
-        <div className='w-full flex flex-col sm:flex-row gap-3 items-center justify-center py-10'>
+        <div className='w-full flex flex-col sm:flex-row gap-3 items-center justify-center py-4'>
           <div className=''>
             <Link href='/'>
               <Image alt='Logo'></Image>
@@ -271,7 +271,7 @@ export default function Home() {
         </div>
       </footer>
       <Link
-        className='h-8 w-8 rounded-full shadow-md bg-green-500 hover:cursor-pointer hover:bg-green-400 dark:bg-orange-400 dark:hover:bg-orange-300 sticky bottom-8 self-end mr-6 flex items-center justify-center'
+        className='h-8 w-8 rounded-full shadow-md bg-green-500 hover:cursor-pointer hover:bg-green-400 dark:bg-orange-400 dark:hover:bg-orange-300 sticky bottom-10 self-end mr-6 flex items-center justify-center'
         href='#main-body'
       >
         <BsCaretUpFill className='text-sm text-white dark:text-slate-900' />
