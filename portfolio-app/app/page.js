@@ -3,12 +3,14 @@ import ThemeSwitcher from './themeSwitcher';
 import Link from 'next/link';
 import { source_Serif_4 } from './fonts';
 import {
+  HiArrowUp,
   HiLocationMarker,
   HiMail,
   HiOutlineExternalLink,
   HiPhone,
 } from 'react-icons/hi';
 import {
+  BsCaretUpFill,
   BsFacebook,
   BsGithub,
   BsLinkedin,
@@ -18,7 +20,10 @@ import {
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white transition-all transform-gpu relative mx-auto'>
+    <main
+      id='main-body'
+      className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white transition-all transform-gpu relative mx-auto'
+    >
       <header className='w-full h-20 sm:px-24 px-8 flex items-center justify-between dark:text-slate-400 bg-slate-50 dark:bg-slate-800 sticky top-0 right-0 left-0 z-50 shadow-lg shadow-transparent'>
         <div className=''>
           <Link href='/'>
@@ -260,11 +265,17 @@ export default function Home() {
               <Image alt='Logo'></Image>
             </Link>
           </div>
-          <p className='text-sm dark:text-slate-300'>
+          <p className='text-sm dark:text-slate-400'>
             Copyright &copy; {new Date().getFullYear()}. All Rights Reserved.
           </p>
         </div>
       </footer>
+      <Link
+        className='h-8 w-8 rounded-full shadow-md bg-green-500 hover:cursor-pointer hover:bg-green-400 dark:bg-orange-400 dark:hover:bg-orange-300 sticky bottom-8 self-end mr-6 flex items-center justify-center'
+        href='#main-body'
+      >
+        <BsCaretUpFill className='text-sm text-white dark:text-slate-900' />
+      </Link>
     </main>
   );
 }
