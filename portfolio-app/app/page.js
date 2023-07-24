@@ -25,13 +25,22 @@ export default function Home() {
       className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white transition-all transform-gpu relative mx-auto'
     >
       <header className='w-full h-20 sm:px-24 px-8 flex items-center justify-between dark:text-slate-400 bg-slate-50 dark:bg-slate-800 sticky top-0 right-0 left-0 z-50 shadow-lg shadow-transparent'>
-        <div className=''>
-          <Link href='/'>
+        <div className='flex'>
+          <Link href='/' className='flex '>
             <Image alt='Logo'></Image>
+            <p className='text-green-500 font-medium text-lg hover:text-slate-800 dark:hover:text-white dark:text-orange-400 ml-1'>
+              &lt;&gt; Henry &lt;/&gt;
+            </p>
           </Link>
         </div>
         <nav>
-          <Link href='#about' className='ptf-nav-links'>
+          <input
+            type='checkbox'
+            name='menu-burger'
+            id='menu-burger'
+            className='ptf-menu-burger'
+          />
+          {/* <Link href='#about' className='ptf-nav-links'>
             About
           </Link>
           <Link href='#portfolio' className='ptf-nav-links'>
@@ -39,7 +48,7 @@ export default function Home() {
           </Link>
           <Link href='#contact' className='ptf-nav-links'>
             Contact
-          </Link>
+          </Link> */}
         </nav>
         <ThemeSwitcher />
       </header>
