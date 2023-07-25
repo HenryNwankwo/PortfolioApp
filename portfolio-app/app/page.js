@@ -60,10 +60,12 @@ export default function Home() {
           <h5>
             Hi, I am <span>Henry</span>
           </h5>
-          <p>A software developer and Data Analyst</p>
-          <button>Hire Me</button>
+          <p className='text-sm'>A software developer and Data Analyst</p>
+          <button className='rounded-full py-2 px-7 bg-gradient-to-tr from-red-600 to-orange-400 dark:from-orange-500 dark:to-yellow-300 text-white dark:text-black'>
+            Hire Me
+          </button>
         </div>
-        <div>
+        <div className='flex flex-col gap-1 text-lg'>
           <BsGithub />
           <BsLinkedin />
           <BsTwitter />
