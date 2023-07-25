@@ -53,6 +53,24 @@ export default function Home() {
         <ThemeSwitcher />
       </header>
 
+      {/* Hero Section */}
+
+      <section id='hero-section'>
+        <div>
+          <h5>
+            Hi, I am <span>Henry</span>
+          </h5>
+          <p>A software developer and Data Analyst</p>
+          <button>Hire Me</button>
+        </div>
+        <div>
+          <BsGithub />
+          <BsLinkedin />
+          <BsTwitter />
+          <BsWhatsapp />
+        </div>
+      </section>
+
       {/* The About section */}
 
       <section id='about' className='ptf-pri-section'>
