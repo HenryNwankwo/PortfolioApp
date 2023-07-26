@@ -55,21 +55,29 @@ export default function Home() {
 
       {/* Hero Section */}
 
-      <section id='hero-section'>
-        <div>
-          <h5>
-            Hi, I am <span>Henry</span>
+      <section
+        id='hero-section'
+        className='ptf-pri-section relative min-h-screen flex items-center bg-slate-50 dark:bg-gray-800 '
+      >
+        <div className='justify-start'>
+          <h5 className='text-xl'>
+            Hi, I am{' '}
+            <span className='text-3xl text-green-500 dark:text-orange-400 py-3 font-medium'>
+              Henry
+            </span>
           </h5>
-          <p className='text-sm'>A software developer and Data Analyst</p>
-          <button className='rounded-full py-2 px-7 bg-gradient-to-tr from-red-600 to-orange-400 dark:from-orange-500 dark:to-yellow-300 text-white dark:text-black'>
+          <p className='text-sm my-1 dark:text-slate-300'>
+            A software developer and Data Analyst
+          </p>
+          <button className='mt-3 rounded-full text-center w-full sm:w-48 sm:py-2 sm:px-10 bg-gradient-to-tr outline outline-green-500 dark:outline-none  dark:from-orange-500 dark:to-yellow-300 hover:from-green-500 hover:to-blue-300 hover:outline-none hover:text-white dark:hover:from-orange-400 dark:hover:to-yellow-200  dark:text-black transition-all duration-200'>
             Hire Me
           </button>
         </div>
-        <div className='flex flex-col gap-1 text-lg'>
-          <BsGithub />
-          <BsLinkedin />
-          <BsTwitter />
-          <BsWhatsapp />
+        <div className='flex flex-col gap-2 h-fit w-fit justify-center items-center text-lg absolute right-10 before:absolute before:-top-20 before:mb-2 before:h-20 before:w-0.5 before:bg-green-500 dark:before:bg-orange-400'>
+          <BsGithub className='text-2xl mt-2' />
+          <BsLinkedin className='text-2xl' />
+          <BsTwitter className='text-2xl' />
+          <BsWhatsapp className='text-2xl' />
         </div>
       </section>
 
