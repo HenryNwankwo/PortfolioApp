@@ -24,7 +24,7 @@ export default function Home() {
       id='main-body'
       className='flex min-h-screen flex-col items-center w-full h-auto max-w-7xl bg-slate-100 dark:bg-slate-900 dark:text-white transition-all transform-gpu relative mx-auto'
     >
-      <header className='w-full h-20 sm:px-10 px-6 flex items-center justify-between dark:text-slate-400 bg-slate-50 dark:bg-slate-800 sticky top-0 right-0 left-0 z-50 shadow-lg shadow-transparent'>
+      <header className='w-full h-20 sm:px-10 px-5 flex items-center justify-between dark:text-slate-400 bg-slate-50 dark:bg-slate-800 sticky top-0 right-0 left-0 z-50 shadow-lg shadow-transparent'>
         <div className='flex'>
           <Link href='/' className='flex '>
             <Image alt='Logo'></Image>
