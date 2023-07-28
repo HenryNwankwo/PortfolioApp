@@ -5,6 +5,9 @@ export const metadata = {
   title: 'Ifunanya Henry Nwankwo Portfolio',
   description:
     "A portfolio containing the track records of Nwankwo Henry Ifunanya's works",
+  icons: {
+    icon: './favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
