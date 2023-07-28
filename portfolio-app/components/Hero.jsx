@@ -1,12 +1,5 @@
 import Link from 'next/link';
-import {
-  BsCaretUpFill,
-  BsFacebook,
-  BsGithub,
-  BsLinkedin,
-  BsTwitter,
-  BsWhatsapp,
-} from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 
 const Hero = () => {
   return (
