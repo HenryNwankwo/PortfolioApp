@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 
-const Hero = () => {
+const Hero = ({ source_Serif_4 }) => {
   return (
     <>
+      {/* Hero Section */}
+
       <section
         id='hero-section'
         className='ptf-pri-section relative min-h-screen flex flex-col sm:flex-row items-center justify-center sm:justify-normal bg-slate-50 dark:bg-gray-800 '

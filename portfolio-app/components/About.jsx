@@ -1,6 +1,8 @@
-const About = () => {
+const About = ({ source_Serif_4 }) => {
   return (
     <>
+      {/* The About section */}
+
       <section id='about' className='ptf-pri-section'>
         <div className={source_Serif_4.className}>
           <h1 className='dark:text-white text-3xl sm:text-5xl font-bold'>

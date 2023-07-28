@@ -1,15 +1,11 @@
 import Link from 'next/link';
-import {
-  HiArrowUp,
-  HiLocationMarker,
-  HiMail,
-  HiOutlineExternalLink,
-  HiPhone,
-} from 'react-icons/hi';
+import { HiOutlineExternalLink } from 'react-icons/hi';
 
-export const Portfolio = () => {
+const Portfolio = ({ source_Serif_4 }) => {
   return (
     <>
+      {/* The Portfolio section */}
+
       <section
         id='portfolio'
         className='w-full h-auto py-20 flex flex-col items-center'
@@ -47,3 +43,5 @@ export const Portfolio = () => {
     </>
   );
 };
+
+export default Portfolio;

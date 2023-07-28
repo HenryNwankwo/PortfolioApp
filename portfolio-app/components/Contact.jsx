@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import { HiLocationMarker, HiMail, HiPhone } from 'react-icons/hi';
+import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 
-const Contact = () => {
+const Contact = ({ source_Serif_4 }) => {
   return (
     <>
+      {/* Contact me section */}
+
       <section
         id='contact'
         className='ptf-pri-section flex flex-col items-center relative bg-slate-50 dark:bg-gray-800 '

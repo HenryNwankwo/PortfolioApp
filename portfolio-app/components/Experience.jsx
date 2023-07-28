@@ -1,6 +1,8 @@
-const Experience = () => {
+const Experience = ({ source_Serif_4 }) => {
   return (
     <>
+      {/* The Experience section */}
+
       <section
         id='experience'
         className='ptf-pri-section bg-slate-50 dark:bg-gray-800 shadow-xl shadow-transparent'

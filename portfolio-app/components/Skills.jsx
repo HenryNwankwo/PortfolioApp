@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const Skills = () => {
+const Skills = ({ source_Serif_4 }) => {
   return (
     <>
       {/* The Skills section */}
