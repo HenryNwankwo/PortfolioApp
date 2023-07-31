@@ -39,16 +39,16 @@ const Contact = ({ source_Serif_4 }) => {
           <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>
           <div className='flex items-center justify-center gap-3'>
             <Link href='#' target='_blank'>
-              <BsGithub className='text-lg' />
+              <BsGithub className='text-xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
             </Link>
             <Link href='#' target='_blank'>
-              <BsTwitter className='text-lg' />
+              <BsTwitter className='text-xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
             </Link>
             <Link href='#' target='_blank'>
-              <BsLinkedin className='text-lg' />
+              <BsLinkedin className='text-xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
             </Link>
             <Link href='#' target='_blank'>
-              <BsWhatsapp className='text-lg' />
+              <BsWhatsapp className='text-xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
             </Link>
           </div>
           <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>

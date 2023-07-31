@@ -26,16 +26,16 @@ const Hero = ({ source_Serif_4 }) => {
         </div>
         <div className='flex sm:flex-col relative mt-4 sm:mt-0 gap-2.5 h-fit w-fit justify-center items-center text-lg sm:absolute before:hidden sm:before:flex sm:right-10 before:absolute before:-top-20 before:mb-2 before:h-20 before:w-0.5 before:bg-green-500 dark:before:bg-orange-400'>
           <Link href='#'>
-            <BsGithub className='text-2xl sm:mt-2' />
+            <BsGithub className='text-2xl sm:mt-2 hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
           </Link>
           <Link href='#'>
-            <BsLinkedin className='text-2xl' />
+            <BsLinkedin className='text-2xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
           </Link>
           <Link href='#'>
-            <BsTwitter className='text-2xl' />
+            <BsTwitter className='text-2xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
           </Link>
           <Link href='#'>
-            <BsWhatsapp className='text-2xl' />
+            <BsWhatsapp className='text-2xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
           </Link>
         </div>
       </section>
