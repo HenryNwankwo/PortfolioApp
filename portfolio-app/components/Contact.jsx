@@ -21,14 +21,14 @@ const Contact = ({ source_Serif_4 }) => {
 
         {/* THe contact me info */}
         <div className='w-full h-auto sm:w-3/5 sm:h-fit flex flex-col sm:flex-row gap-3 sm:flex-wrap items-center justify-center'>
-          <button className='px-4 py-3 w-full sm:w-fit  bg-gradient-to-br from-green-500 dark:from-slate-900 to-blue-500 dark:to-gray-950 rounded-lg flex gap-2 text-white items-center'>
+          <button className='ptf-contact-me-button'>
             <HiMail className='text-lg dark:text-orange-400' /> mymail@gmail.com{' '}
           </button>
-          <button className='px-4 py-3 w-full sm:w-fit  bg-gradient-to-br from-green-500 dark:from-slate-900 to-blue-500 dark:to-gray-950 rounded-lg flex gap-2 text-white items-center'>
+          <button className='ptf-contact-me-button'>
             <HiPhone className='text-lg dark:text-orange-400' />
             +2347069782561
           </button>
-          <button className='px-4 py-3 w-full sm:w-fit  bg-gradient-to-br from-green-500 dark:from-slate-900 to-blue-500 dark:to-gray-950 rounded-lg flex gap-2 text-white items-center'>
+          <button className='ptf-contact-me-button '>
             <HiLocationMarker className='text-lg dark:text-orange-400' />
             <p>Ilorin, Nigeria</p>
           </button>
