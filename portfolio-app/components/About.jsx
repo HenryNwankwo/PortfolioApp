@@ -10,7 +10,7 @@ const About = ({ source_Serif_4 }) => {
           </h1>
         </div>
         <div className='mt-4 flex flex-row w-full'>
-          <span className='block border-t-4 border-solid border-green-500 dark:border-orange-400 sm:w-12 w-32 mt-2 mr-2'></span>
+          <span className='block border-t-2 border-solid border-green-500 dark:border-orange-400 sm:w-12 w-32 mt-2 mr-2'></span>
           <p className='pa_aboutText '>
             I like to craft solid and scalable frontend products with great user
             experiences. I build accessible, inclusive products and digital
