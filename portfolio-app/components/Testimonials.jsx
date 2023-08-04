@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { BsCaretLeft, BsCaretRight } from 'react-icons/bs';
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 
 const Testimonials = ({ source_Serif_4 }) => {
   return (
@@ -9,8 +9,8 @@ const Testimonials = ({ source_Serif_4 }) => {
         id='testimonials'
         className='ptf-pri-section min-h-90 flex flex-col sm:flex-row relative'
       >
-        <button className='w-12 h-12 rounded-full absolute left-5 sm:left-12 top-1/2 bg-white opacity-40 flex items-center justify-center shadow-2xl shadow-slate-400'>
-          <BsCaretLeft className='text-2xl dark:text-slate-900 dark:text-opacity-90'></BsCaretLeft>
+        <button className='w-12 h-12 rounded-full absolute left-5 sm:left-12 top-1/2 flex items-center justify-center shadow-2xl shadow-transparent'>
+          <BsChevronCompactLeft className='text-2xl'></BsChevronCompactLeft>
         </button>
         <div className='w-full sm:w-2/5 sm:order-2 sm:ml-8'>
           <Image alt='' height={100} width={100} />
@@ -42,8 +42,8 @@ const Testimonials = ({ source_Serif_4 }) => {
             </div>
           </div>
         </div>
-        <button className='w-12 h-12 rounded-full absolute right-5 sm:right-12 top-1/2 bg-white opacity-40 flex items-center justify-center shadow-2xl shadow-slate-400'>
-          <BsCaretRight className='text-2xl dark:text-slate-900 dark:text-opacity-90'></BsCaretRight>
+        <button className='w-12 h-12 rounded-full absolute right-5 sm:right-12 top-1/2 flex items-center justify-center shadow-2xl shadow-transparent'>
+          <BsChevronCompactRight className='text-2xl '></BsChevronCompactRight>
         </button>
       </section>
     </>
