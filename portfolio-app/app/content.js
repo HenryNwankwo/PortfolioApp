@@ -39,7 +39,7 @@ export const skills = [
     id: 7,
     name: 'Nodejs',
     image:
-      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1690989016/skills-images/nodejs-1_j5iw4a.svg',
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1691150864/skills-images/icons8-node-js_h1kcaz.svg',
   },
   {
     id: 8,
@@ -57,7 +57,7 @@ export const skills = [
     id: 10,
     name: 'Github',
     image:
-      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1690989017/skills-images/github-icon-1_fq4t4r.svg',
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1691150493/skills-images/icons8-github_jcw0qy.svg',
   },
   {
     id: 11,
@@ -69,7 +69,7 @@ export const skills = [
     id: 12,
     name: 'Google Sheets',
     image:
-      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1690989015/skills-images/google-sheets-full-logo-1_kaem5p.svg',
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1691150494/skills-images/icons8-google-sheets_us4aqv.svg',
   },
   {
     id: 13,
@@ -87,7 +87,7 @@ export const skills = [
     id: 15,
     name: 'Nextjs',
     image:
-      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1690989015/skills-images/next-js_tt3g4u.svg',
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1691150493/skills-images/icons8-nextjs_izhuzj.svg',
   },
   {
     id: 16,
@@ -105,12 +105,12 @@ export const skills = [
     id: 18,
     name: 'RStudio',
     image:
-      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1690989016/skills-images/r-studio-1_a8kv1k.svg',
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1691150494/skills-images/icons8-rstudio_f7mfrk.svg',
   },
   {
     id: 19,
     name: 'Tableau',
     image:
-      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1690989014/skills-images/tableau-logo-1_pp073f.svg',
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1691150493/skills-images/icons8-tableau-software_deghp9.svg',
   },
 ];
