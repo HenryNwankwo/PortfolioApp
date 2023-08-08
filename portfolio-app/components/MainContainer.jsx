@@ -1,4 +1,3 @@
-import React from 'react';
 import PageUp from './PageUp';
 
 const MainContainer = ({ children }) => {

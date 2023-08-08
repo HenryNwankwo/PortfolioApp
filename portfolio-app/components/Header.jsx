@@ -1,8 +1,28 @@
+'use client';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import ThemeSwitcher from '@/app/themeSwitcher';
 
 const Header = () => {
+  const navRef = useRef(null);
+  const checkboxRef = useRef(null);
+
+  // Closing the nav bar on mousedown outside the navbar event
+  useEffect(() => {
+    const navOpenHandler = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        //close the nav dropdown
+        checkboxRef.current.checked = false;
+      }
+    };
+
+    document.addEventListener('mousedown', navOpenHandler);
+    return () => {
+      document.removeEventListener('mousedown', navOpenHandler);
+    };
+  });
+
   return (
     <>
       {/* Header Section */}
@@ -13,6 +33,7 @@ const Header = () => {
           name='menu-burger'
           id='menu-burger'
           className='ptf-menu-burger peer sm:hidden checked:mr-5'
+          ref={checkboxRef}
         />
         <div className='flex'>
           <Link href='/' className='flex '>
@@ -23,7 +44,10 @@ const Header = () => {
           </Link>
         </div>
 
-        <nav className='absolute hidden w-screen top-20  left-0 shadow-lg shadow-transparent flex-col items-center py-2 bg-slate-50 dark:bg-slate-800 h-auto peer-checked:flex sm:py-0 sm:flex sm:flex-row sm:relative sm:top-0 sm:w-fit '>
+        <nav
+          ref={navRef}
+          className='absolute hidden w-screen top-20  left-0 shadow-lg shadow-transparent flex-col items-center py-2 bg-slate-50 dark:bg-slate-800 h-auto peer-checked:flex sm:py-0 sm:flex sm:flex-row sm:relative sm:top-0 sm:w-fit '
+        >
           <Link href='#about' className='ptf-nav-links'>
             About
           </Link>
