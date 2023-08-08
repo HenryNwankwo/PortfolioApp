@@ -3,10 +3,12 @@ import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import ThemeSwitcher from '@/app/themeSwitcher';
+import { usePtfContext } from '@/utils/PtfContext';
 
 const Header = () => {
   const navRef = useRef(null);
   const checkboxRef = useRef(null);
+  const { theme } = usePtfContext();
 
   // Closing the nav bar on mousedown outside the navbar event
   useEffect(() => {
@@ -36,9 +38,18 @@ const Header = () => {
           ref={checkboxRef}
         />
         <div className='flex'>
-          <Link href='/' className='flex '>
-            <Image alt='Logo'></Image>
-            <p className='text-green-500 font-medium text-lg hover:text-slate-800 dark:hover:text-white dark:text-orange-400 ml-1'>
+          <Link href='/' className='flex items-center'>
+            <Image
+              alt='Logo'
+              width={25}
+              height={25}
+              src={
+                theme == 'light'
+                  ? '/assets/img/logo-green.png'
+                  : '/assets/img/logo-orange.png'
+              }
+            ></Image>
+            <p className='text-green-500 font-medium text-lg hover:text-slate-800 dark:hover:text-white dark:text-orange-400 ml-2'>
               &lt;&gt; Henry &lt;/&gt;
             </p>
           </Link>

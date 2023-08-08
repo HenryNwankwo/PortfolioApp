@@ -1,5 +1,6 @@
 import './globals.css';
 import { poppins } from './fonts';
+import { PtfProvider } from '@/utils/PtfContext';
 
 export const metadata = {
   title: 'H.I.N. - A Portfolio containing the works of Nwankwo Henry Ifunanya',
@@ -10,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className='dark !scroll-smooth'>
-      <body className={`${poppins.className}`}>{children}</body>
+      <PtfProvider>
+        <body className={`${poppins.className}`}>{children}</body>
+      </PtfProvider>
     </html>
   );
 }

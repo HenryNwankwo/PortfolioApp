@@ -1,10 +1,11 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { HiMiniSun } from 'react-icons/hi2';
 import { BsMoonStarsFill } from 'react-icons/bs';
+import { usePtfContext } from '@/utils/PtfContext';
 
 export default function ThemeSwitcher() {
-  const [theme, setTheme] = useState('dark');
+  const { theme, setTheme } = usePtfContext();
 
   useEffect(() => {
     if (theme === 'dark') {
