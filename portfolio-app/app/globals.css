@@ -17,7 +17,9 @@
   before:checked:rotate-45 after:checked:-rotate-45 before:checked:top-0 
   after:checked:bottom-0 transition-all duration-200;
 }
-
+.ptf-img-blob {
+  clip-path: url('#image-blob');
+}
 /* Skills Section Styles */
 
 .ptf-skills-box {

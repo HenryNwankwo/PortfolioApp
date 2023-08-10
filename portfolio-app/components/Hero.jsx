@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
+import ImageBlob from './ImageBlob';
 
 const Hero = ({ source_Serif_4 }) => {
   return (
@@ -8,8 +9,9 @@ const Hero = ({ source_Serif_4 }) => {
 
       <section
         id='hero-section'
-        className='ptf-pri-section relative min-h-screen sm:min-h-135 flex flex-col sm:flex-row items-center justify-center sm:justify-normal bg-slate-50 dark:bg-gray-800'
+        className='ptf-pri-section relative min-h-screen sm:min-h-135 flex flex-col sm:flex-row items-center justify-center sm:justify-normal bg-slate-50 dark:bg-gray-800 sm:bg-[url("/assets/img/hero-image.png")] bg-[length:494px_536px] bg-right-bottom bg-no-repeat'
       >
+        <ImageBlob></ImageBlob>
         <div className='sm:justify-start'>
           <h5 className='text-xl'>
             Hi, I am{' '}
