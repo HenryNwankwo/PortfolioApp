@@ -14,12 +14,12 @@ const Hero = ({ source_Serif_4 }) => {
       >
         {/* Hero Image on small devices */}
         <div className='h-5/6 w-5/6 sm:hidden flex items-center justify-center mb-12 relative'>
-          <ImageBlob classnames='absolute opacity-10 bottom-25'></ImageBlob>
+          <ImageBlob classnames='absolute opacity-30 bottom-25'></ImageBlob>
           <Image
             src={`/assets/img/hero-image.png`}
             alt="Nwankwo Henry's photo"
-            width={250}
-            height={250}
+            width={200}
+            height={200}
             className='rounded-full z-10'
           />
         </div>
