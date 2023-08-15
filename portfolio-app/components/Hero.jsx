@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import ImageBlob from './ImageBlob';
 
@@ -11,7 +12,17 @@ const Hero = ({ source_Serif_4 }) => {
         id='hero-section'
         className='ptf-pri-section relative min-h-screen sm:min-h-135 flex flex-col sm:flex-row items-center justify-center sm:justify-normal bg-slate-50 dark:bg-gray-800 sm:bg-[url("/assets/img/hero-image.png")] bg-[length:494px_536px] bg-right-bottom bg-no-repeat'
       >
-        <ImageBlob></ImageBlob>
+        {/* Hero Image on small devices */}
+        <div className='h-5/6 w-5/6 sm:hidden flex items-center justify-center mb-12 relative'>
+          <ImageBlob classnames='absolute opacity-10 bottom-25'></ImageBlob>
+          <Image
+            src={`/assets/img/hero-image.png`}
+            alt="Nwankwo Henry's photo"
+            width={250}
+            height={250}
+            className='rounded-full z-10'
+          />
+        </div>
         <div className='sm:justify-start'>
           <h5 className='text-xl'>
             Hi, I am{' '}
@@ -26,6 +37,7 @@ const Hero = ({ source_Serif_4 }) => {
             Hire Me
           </button>
         </div>
+        {/* Social links */}
         <div className='flex sm:flex-col relative mt-4 sm:mt-0 gap-2.5 h-fit w-fit justify-center items-center text-lg sm:absolute before:hidden sm:before:flex sm:right-10 before:absolute before:-top-20 before:mb-2 before:h-20 before:w-0.5 before:bg-green-500 dark:before:bg-orange-400'>
           <Link href='#'>
             <BsGithub className='text-2xl sm:mt-2 hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
