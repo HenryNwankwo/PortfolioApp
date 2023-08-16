@@ -29,7 +29,7 @@
 /* primary Section styles */
 
 .ptf-pri-section {
-  @apply w-full h-auto sm:px-24 px-8 sm:py-16 py-11 pt-20;
+  @apply w-full max-w-full h-auto sm:px-24 px-8 sm:py-16 py-11 pt-20;
 }
 
 /* Experience Section Styles */
