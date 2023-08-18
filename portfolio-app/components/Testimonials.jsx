@@ -7,14 +7,22 @@ const Testimonials = ({ source_Serif_4 }) => {
       {/* Testimonial section */}
       <section
         id='testimonials'
-        className='ptf-pri-section min-h-90 flex flex-col sm:flex-row relative'
+        className='ptf-pri-section min-h-90 flex flex-col sm:flex-row relative py-0'
       >
         <button className='w-12 h-12 rounded-full absolute left-5 sm:left-12 top-1/2 flex items-center justify-center shadow-2xl shadow-transparent'>
           <BsChevronCompactLeft className='text-2xl'></BsChevronCompactLeft>
         </button>
-        <div className='w-full sm:w-2/5 sm:order-2 sm:ml-8'>
-          <Image alt='' height={100} width={100} />
+
+        {/* Testimonial image group */}
+        <div className='w-full sm:w-2/5 sm:order-2 sm:ml-8 -mt-16 h-auto flex flex-col items-center justify-center relative overflow-hidden'>
+          <div className='w-44 h-72 bg-gradient-to-tr from-green-500 to-blue-400 dark:from-orange-400 dark:to-yellow-200 rounded-b-3xl -mt-8 '></div>
+          <div className='w-52 h-52 rounded-full border-8 border-slate-100 dark:border-slate-900 flex items-center justify-center absolute -bottom-3 left-8'>
+            <Image alt='' height={100} width={100} />
+          </div>
+          {/* <div className='w-2 h-3/5 bg-gradient-to-tr to-green-500 from-blue-400 dark:to-orange-400 dark:from-yellow-200'></div> */}
         </div>
+
+        {/* Testimonial writing */}
         <div className='w-full sm:w-3/5'>
           <h2
             className={`text-3xl sm:text-5xl font-bold dark:text-white ${source_Serif_4.className}`}
