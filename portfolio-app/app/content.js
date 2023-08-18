@@ -114,3 +114,30 @@ export const skills = [
       'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1691150493/skills-images/icons8-tableau-software_deghp9.svg',
   },
 ];
+
+export const testimonialItems = [
+  {
+    id: 1,
+    photo: '',
+    name: 'Josef Sharon',
+    position: 'CEO, Omisoft',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fuga, nostrum officiis sint sapiente harum corporis repellat ducimus labore tenetur illo laudantium incidunt eaque dicta ut animi cumque quod nemo.',
+  },
+  {
+    id: 2,
+    photo: '',
+    name: 'Kirky Mars',
+    position: 'HR, Elkanah',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fuga, nostrum officiis sint sapiente harum corporis repellat ducimus labore tenetur illo laudantium incidunt eaque dicta ut animi cumque quod nemo.',
+  },
+  {
+    id: 3,
+    photo: '',
+    name: 'Joshua Adebayo',
+    position: 'IT/SIWES Officer',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fuga, nostrum officiis sint sapiente harum corporis repellat ducimus labore tenetur illo laudantium incidunt eaque dicta ut animi cumque quod nemo.',
+  },
+];
