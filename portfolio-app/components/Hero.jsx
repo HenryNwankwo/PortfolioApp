@@ -29,7 +29,7 @@ const Hero = ({ source_Serif_4 }) => {
         <div className='sm:justify-start'>
           <h5 className='text-xl'>
             Hi, I am{' '}
-            <span className='text-3xl text-green-500 dark:text-orange-400 py-3 font-medium'>
+            <span className='text-5xl bg-gradient-to-tr  from-green-500 to-blue-400 dark:from-orange-400 dark:to-yellow-300 text-transparent bg-clip-text py-3 font-bold'>
               Henry
             </span>
           </h5>
