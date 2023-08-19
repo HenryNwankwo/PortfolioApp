@@ -1,15 +1,23 @@
 'use client';
 
-import { useState } from 'react';
 import TestimonialItem from './TestimonialItem';
-import { testimonialItems } from '@/app/content';
+import { usePtfContext } from '@/utils/PtfContext';
 
 const TestimonialCard = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const { source_Serif_4, testimonialItems, activeIndex } = usePtfContext();
+
   return (
-    <div style={{ transform: `translate:(-${activeIndex * 100})` }}>
+    <div
+      className=' whitespace-nowrap transition-transform duration-300 relative'
+      style={{ transform: `translate(-${activeIndex * 100}%)` }}
+    >
       {testimonialItems.map((item) => (
-        <TestimonialItem item={item} key={item.id} />
+        <TestimonialItem
+          item={item}
+          key={item.id}
+          source_Serif_4={source_Serif_4}
+          width={'100%'}
+        />
       ))}
     </div>
   );
