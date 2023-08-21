@@ -10,10 +10,10 @@ const Testimonials = () => {
       {/* Testimonial section */}
       <section
         id='testimonials'
-        className='ptf-pri-section h-auto flex flex-col relative py-0 overflow-hidden'
+        className='w-full max-w-full h-auto sm:py-16 pt-14 sm:pt-20 flex flex-col relative overflow-hidden justify-center'
       >
         <h2
-          className={`text-3xl sm:text-5xl font-bold dark:text-white ${source_Serif_4.className} -mt-8 sm:-mt-0 bg-slate-100 dark:bg-slate-900 rounded-3xl py-4 sm:bg-transparent sm:dark:bg-transparent sm:p-0 z-10`}
+          className={`sm:px-24 px-8 text-3xl sm:text-5xl font-bold dark:text-white ${source_Serif_4.className} -mt-8 sm:-mt-0 py-4 sm:p-0 z-10 mb-4 `}
         >
           Testimonial
         </h2>
@@ -23,7 +23,7 @@ const Testimonials = () => {
         <TestimonialCard />
 
         {/* Previous and Next buttons */}
-        <div className='w-screen flex justify-between absolute left-0 top-1/2 px-8'>
+        <div className='w-screen max-w-screen-xl flex justify-between absolute left-0 top-1/2 px-2 sm:px-8'>
           <button
             className='w-12 h-12 rounded-full flex items-center justify-center shadow-2xl shadow-transparent'
             onClick={() => updateIndex(activeIndex - 1)}

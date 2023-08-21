@@ -8,7 +8,7 @@ const TestimonialCard = () => {
 
   return (
     <div
-      className=' whitespace-nowrap transition-transform duration-300 relative'
+      className=' whitespace-nowrap transition-transform duration-300 '
       style={{ transform: `translate(-${activeIndex * 100}%)` }}
     >
       {testimonialItems.map((item) => (
