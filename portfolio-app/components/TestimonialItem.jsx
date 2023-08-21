@@ -3,7 +3,7 @@ import Image from 'next/image';
 const TestimonialItem = ({ item, source_Serif_4 }) => {
   const { photo, description, position, name } = item;
   return (
-    <div className='inline-flex w-full max-w-screen-xl whitespace-normal px-0 sm:px-20 pb-20 sm:py-0 sm:pb-0 pt-8 sm:pt-14'>
+    <div className='inline-flex w-full max-w-screen-xl whitespace-normal px-0 sm:px-20 pb-10 sm:py-0 sm:pb-0 pt-8 sm:pt-14'>
       {/* Testimonial image group */}
       <div className='w-1/4 sm:w-2/5 order-2 sm:ml-8 -mt-16 h-auto flex flex-col items-center justify-center relative overflow-hidden'>
         <div className=' w-20 sm:w-44 h-72 bg-gradient-to-tr from-green-500 to-blue-400 dark:from-orange-400 dark:to-yellow-200 rounded-b-3xl -mt-8 '></div>
