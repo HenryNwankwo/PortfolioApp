@@ -14,8 +14,12 @@ const Footer = ({ dancing_script }) => {
           <p className='text-center text-4xl text-green-500 dark:text-yellow-400'>
             <q className={dancing_script.className}>Thanks for Scrolling</q>
           </p>
+          <p className='text-center text-sm mt-2 dark:text-slate-400'>
+            Made with &#128151; by yours truly
+          </p>
         </div>
-        <div className='w-full flex flex-col sm:flex-row gap-3 items-center justify-center py-4'>
+
+        <div className='w-full flex flex-col sm:flex-row gap-3 items-center justify-center py-2'>
           <div className=''>
             <Link href='/'>
               <Image
