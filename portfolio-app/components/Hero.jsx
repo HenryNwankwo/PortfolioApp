@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
+import { TbClick } from 'react-icons/tb';
 import ImageBlob from './ImageBlob';
 import SkillsLogoGroup from './SkillsLogoGroup';
 
@@ -36,8 +37,8 @@ const Hero = ({ source_Serif_4 }) => {
           <p className='text-sm my-1 dark:text-slate-300'>
             A software developer and Data Analyst
           </p>
-          <button className='mt-3 rounded-full text-center w-full py-3 sm:w-48 sm:py-2 sm:px-10 bg-gradient-to-tr outline outline-green-500 dark:outline-none  dark:from-orange-500 dark:to-yellow-300 hover:from-green-500 hover:to-blue-300 hover:outline-none hover:text-white dark:hover:from-orange-400 dark:hover:to-yellow-200  dark:text-black transition-all duration-200'>
-            Hire Me
+          <button className='flex items-center justify-center mt-3 rounded-full text-center w-full py-3 sm:w-56 sm:py-2 sm:px-10 bg-gradient-to-tr outline outline-green-500 dark:outline-none  dark:from-orange-500 dark:to-yellow-300 hover:from-green-500 hover:to-blue-300 hover:outline-none hover:text-white dark:hover:from-orange-400 dark:hover:to-yellow-200  dark:text-black transition-all duration-200'>
+            Hire Me <TbClick className='ml-2 text-2xl' />
           </button>
         </div>
         {/* Social links */}
