@@ -1,7 +1,7 @@
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Portfolio from '@/components/Portfolio';
-import Experience from '@/components/Experience';
+import Qualification from '@/components/Qualification';
 import Hero from '@/components/Hero';
 import Skills from '@/components/Skills';
 import Header from '@/components/Header';
@@ -18,7 +18,7 @@ export default function Home() {
       <About source_Serif_4={source_Serif_4}></About>
       <Skills source_Serif_4={source_Serif_4}></Skills>
       <Portfolio source_Serif_4={source_Serif_4}></Portfolio>
-      <Experience source_Serif_4={source_Serif_4}></Experience>
+      <Qualification source_Serif_4={source_Serif_4}></Qualification>
       <Testimonials source_Serif_4={source_Serif_4}></Testimonials>
       <Contact source_Serif_4={source_Serif_4}></Contact>
       <Footer dancing_script={dancing_script}></Footer>
