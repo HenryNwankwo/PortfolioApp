@@ -15,9 +15,11 @@ const Experience = ({ source_Serif_4 }) => {
       >
         <div className={source_Serif_4.className}>
           <h1 className='dark:text-white text-3xl sm:text-5xl font-bold'>
-            Experience
+            Qualifications
           </h1>
         </div>
+
+        {/* The Qualification tabs */}
 
         <ul className='w-full flex justify-center items-center my-10 '>
           <li
