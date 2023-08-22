@@ -27,14 +27,14 @@ const Hero = ({ source_Serif_4 }) => {
             className='rounded-full z-10'
           />
         </div>
-        <div className='sm:justify-start'>
-          <h5 className='text-xl'>
+        <div className='sm:justify-start flex flex-col justify-center items-center'>
+          <h5 className='text-xl text-center'>
             Hi, I am{' '}
             <span className='text-5xl bg-gradient-to-tr  from-green-500 to-blue-400 dark:from-orange-400 dark:to-yellow-300 text-transparent bg-clip-text py-3 font-bold'>
               Henry
             </span>
           </h5>
-          <p className='text-sm my-1 dark:text-slate-300'>
+          <p className='text-sm text-center my-1 dark:text-slate-300'>
             A software developer and Data Analyst
           </p>
           <button className='flex items-center justify-center mt-3 rounded-full text-center w-full py-3 sm:w-56 sm:py-2 sm:px-10 bg-gradient-to-tr outline outline-green-500 dark:outline-none  dark:from-orange-500 dark:to-yellow-300 hover:from-green-500 hover:to-blue-300 hover:outline-none hover:text-white dark:hover:from-orange-400 dark:hover:to-yellow-200  dark:text-black transition-all duration-200'>
