@@ -12,6 +12,9 @@ const Portfolio = ({ source_Serif_4 }) => {
       >
         <div className='text-center py-4 text-2xl sm:text-3xl font-bold'>
           <h2 className={source_Serif_4.className}>Portfolio</h2>
+          <p className='text-sm font-medium dark:text-orange-400 text-green-500 py-1'>
+            Some past works
+          </p>
         </div>
         <div className='w-fit flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:justify-items-center md:content-center gap-5 m-2'>
           <div className='w-60 h-60 shadow-xl shadow-transparent dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group transition-all transform duration-300'>

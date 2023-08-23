@@ -71,8 +71,8 @@ const ContactForm = () => {
             name='message'
             id='message'
             cols='30'
-            rows='5'
-            className='px-4 py-2 rounded-2xl w-full bg-slate-100 dark:bg-slate-900 outline-none placeholder:text-sm focus:shadow focus:shadow-slate-100 dark:focus:shadow-slate-800'
+            rows='10'
+            className='px-4 py-2 rounded-2xl w-full bg-slate-100 dark:bg-slate-900 outline-none placeholder:text-sm focus:shadow focus:shadow-slate-100 dark:focus:shadow-slate-800 resize-none'
             placeholder='Type your message here!'
             {...formik.getFieldProps('message')}
           ></textarea>

@@ -13,10 +13,15 @@ const Experience = ({ source_Serif_4 }) => {
         id='experience'
         className='ptf-pri-section bg-slate-50 dark:bg-gray-800 shadow-xl shadow-transparent'
       >
-        <div className={source_Serif_4.className}>
-          <h1 className='dark:text-white text-3xl sm:text-5xl font-bold'>
+        <div>
+          <h1
+            className={`dark:text-white text-3xl sm:text-5xl font-bold ${source_Serif_4.className}`}
+          >
             Qualifications
           </h1>
+          <p className='text-sm font-medium dark:text-orange-400 text-green-500 py-1 pl-2'>
+            Why you should hire me
+          </p>
         </div>
 
         {/* The Qualification tabs */}

@@ -16,7 +16,7 @@ const Contact = ({ source_Serif_4 }) => {
           <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>
           <div className='text-center py-4 text-2xl sm:text-4xl md:text-5xl font-bold w-fit p-2'>
             <h2 className={source_Serif_4.className}>Contact Me</h2>
-            <p className='text-sm sm:text-base font-medium sm:font-bold dark:text-orange-400 text-green-500'>
+            <p className='text-sm font-medium dark:text-orange-400 text-green-500'>
               Get in touch
             </p>
           </div>

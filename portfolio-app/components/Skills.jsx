@@ -9,6 +9,9 @@ const Skills = ({ source_Serif_4 }) => {
       <section id='skills' className='py-4'>
         <div className='text-center py-4 text-2xl sm:text-3xl font-bold'>
           <h2 className={source_Serif_4.className}>My Skills</h2>
+          <p className='text-sm font-medium dark:text-orange-400 text-green-500 py-1'>
+            Tools I work with
+          </p>
         </div>
         <div className='w-full sm:px-24 px-8 flex flex-wrap gap-6 justify-center items-center my-2'>
           {skills.map((skill) => (
