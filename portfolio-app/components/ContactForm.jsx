@@ -2,6 +2,7 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { BsSendFill } from 'react-icons/bs';
+import FormError from './FormError';
 
 const ContactForm = () => {
   const formik = useFormik({
@@ -15,7 +16,9 @@ const ContactForm = () => {
       email: Yup.string()
         .email('Invalid email address!')
         .required('Email address is required!'),
-      message: Yup.string().min(),
+      message: Yup.string()
+        .required('You cannot send an empty message!')
+        .min(10, 'Message must be above 10 characters!'),
     }),
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
@@ -44,6 +47,9 @@ const ContactForm = () => {
             className='ptf-contact-input'
             {...formik.getFieldProps('name')}
           />
+          {formik.touched.name && formik.errors.name ? (
+            <FormError>{formik.errors.name}</FormError>
+          ) : null}
         </div>
         <div className='my-1.5 w-full'>
           <label htmlFor='email'></label>
@@ -55,6 +61,9 @@ const ContactForm = () => {
             className='ptf-contact-input'
             {...formik.getFieldProps('email')}
           />
+          {formik.touched.email && formik.errors.email ? (
+            <FormError>{formik.errors.email}</FormError>
+          ) : null}
         </div>
         <div className='my-1.5 w-full'>
           <label htmlFor='message'></label>
@@ -67,6 +76,9 @@ const ContactForm = () => {
             placeholder='Type your message here!'
             {...formik.getFieldProps('message')}
           ></textarea>
+          {formik.touched.message && formik.errors.message ? (
+            <FormError>{formik.errors.message}</FormError>
+          ) : null}
         </div>
         <div className='w-full'>
           <button
