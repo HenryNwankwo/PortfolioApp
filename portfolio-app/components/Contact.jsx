@@ -1,25 +1,9 @@
 import Link from 'next/link';
-import { useFormik } from 'formik';
 import { HiLocationMarker, HiMail, HiPhone } from 'react-icons/hi';
-import {
-  BsGithub,
-  BsSendFill,
-  BsLinkedin,
-  BsTwitter,
-  BsWhatsapp,
-} from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
+import ContactForm from './ContactForm';
 
 const Contact = ({ source_Serif_4 }) => {
-  const formik = useFormik({
-    initialValues: {
-      name: '',
-      email: '',
-      message: '',
-    },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
   return (
     <>
       {/* Contact me section */}
@@ -89,63 +73,7 @@ const Contact = ({ source_Serif_4 }) => {
           </div>
 
           {/* contact form */}
-          <form
-            className='w-full flex flex-col items-center justify-center py-4 px-2 gap-1.5 sm:ml-8'
-            onSubmit={formik.handleSubmit}
-          >
-            <p className='text-center mb-4'>
-              You can write me a
-              <span className='mx-1 text-green-500 dark:text-orange-400'>
-                quick
-              </span>
-              message
-            </p>
-            <div className='my-1.5 w-full'>
-              <label htmlFor='name'></label>
-              <input
-                type='text'
-                placeholder='Name'
-                name='name'
-                id='name'
-                value={formik.values.name}
-                onChange={formik.handleChange}
-                className='w-full px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-900 outline-none placeholder:text-sm focus:shadow focus:shadow-slate-100 dark:focus:shadow-slate-800'
-              />
-            </div>
-            <div className='my-1.5 w-full'>
-              <label htmlFor='email'></label>
-              <input
-                type='email'
-                placeholder='Email'
-                name='email'
-                id='email'
-                value={formik.values.email}
-                onChange={formik.handleChange}
-                className='w-full px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-900 outline-none placeholder:text-sm focus:shadow focus:shadow-slate-100 dark:focus:shadow-slate-800'
-              />
-            </div>
-            <div className='my-1.5 w-full'>
-              <label htmlFor='message'></label>
-              <textarea
-                name='message'
-                id='message'
-                value={formik.values.message}
-                onChange={formik.handleChange}
-                cols='30'
-                rows='5'
-                className='px-4 py-2 rounded-2xl w-full bg-slate-100 dark:bg-slate-900 outline-none placeholder:text-sm focus:shadow focus:shadow-slate-100 dark:focus:shadow-slate-800'
-                placeholder='Type your message here!'
-              ></textarea>
-            </div>
-            <div className='w-full'>
-              <button
-                type='submit'
-                className='mx-auto text-white py-3 px-4 dark:text-black rounded-full bg-gradient-to-br from-green-500 dark:from-orange-500 dark:hover:from-orange-400 to-blue-400 dark:to-yellow-300 dark:hover:to-yellow-200 hover:from-blue-400 hover:to-blue-300 w-full sm:w-fit flex justify-center items-center dark:text-medium sm:mr-0'
-              >
-                Send Message <BsSendFill className='ml-2 text-xl' />
-              </button>
-            </div>
-          </form>
+          <ContactForm />
         </div>
 
         {/* The Social Icons */}

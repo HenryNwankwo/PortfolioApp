@@ -53,3 +53,6 @@
 .ptf-contact-me-button {
   @apply px-4 py-3 w-full sm:w-fit  bg-gradient-to-br from-green-500 dark:from-slate-900 to-blue-500 dark:to-gray-950 rounded-lg flex gap-2 text-white items-center hover:to-blue-800 transition-all duration-200;
 }
+.ptf-contact-input{
+  @apply w-full px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-900 outline-none placeholder:text-sm focus:shadow focus:shadow-slate-100 dark:focus:shadow-slate-800;
+}
