@@ -1,5 +1,6 @@
 'use client';
 import { HiLocationMarker, HiMail, HiPhone } from 'react-icons/hi';
+import { HiMiniArrowTopRightOnSquare } from 'react-icons/hi2';
 
 const ContactInfo = () => {
   const phoneNumber = '+2347069782561';
@@ -21,7 +22,8 @@ const ContactInfo = () => {
             Email Me
           </p>
           <button className='ptf-contact-me-button' onClick={handleEmail}>
-            <HiMail className='text-lg dark:text-orange-400' /> mymail@gmail.com{' '}
+            <HiMail className='text-lg dark:text-orange-400' /> mymail@gmail.com
+            <HiMiniArrowTopRightOnSquare className='text-lg dark:text-orange-400' />
           </button>
         </div>
 
@@ -34,6 +36,7 @@ const ContactInfo = () => {
           <button className='ptf-contact-me-button' onClick={handlePhoneCall}>
             <HiPhone className='text-lg dark:text-orange-400' />
             +2347069782561
+            <HiMiniArrowTopRightOnSquare className='text-lg dark:text-orange-400' />
           </button>
         </div>
 
