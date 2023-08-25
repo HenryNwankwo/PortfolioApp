@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { HiLocationMarker, HiMail, HiPhone } from 'react-icons/hi';
 import { BsGithub, BsLinkedin, BsTwitter, BsWhatsapp } from 'react-icons/bs';
 import ContactForm from './ContactForm';
+import ContactInfo from './ContactInfo';
 
 const Contact = ({ source_Serif_4 }) => {
   return (
@@ -28,43 +28,7 @@ const Contact = ({ source_Serif_4 }) => {
 
         <div className='w-full h-auto flex flex-col md:flex-row sm:w-11/12 md:w-full lg:w-5/6 items-center justify-center md:mt-10'>
           {/* The contact me info */}
-          <div className='w-full h-auto sm:h-fit flex flex-col sm:flex-row md:flex-col gap-3 items-center justify-center md:mr-7 '>
-            {/* The email group */}
-            <div className='flex flex-col w-full md:items-end'>
-              <p className='dark:text-orange-400 text-left text-sm my-1 font-medium'>
-                Email Me
-              </p>
-              <button className='ptf-contact-me-button'>
-                <HiMail className='text-lg dark:text-orange-400' />{' '}
-                mymail@gmail.com{' '}
-              </button>
-            </div>
-
-            {/* The phone group */}
-
-            <div className='flex flex-col w-full md:items-end'>
-              <p className='dark:text-orange-400 text-left text-sm my-1 font-medium'>
-                Prefer Calling?
-              </p>
-              <button className='ptf-contact-me-button'>
-                <HiPhone className='text-lg dark:text-orange-400' />
-                +2347069782561
-              </button>
-            </div>
-
-            {/* The location group */}
-
-            <div className='flex flex-col w-full md:items-end'>
-              <p className='dark:text-orange-400 text-left text-sm my-1 font-medium'>
-                Location
-              </p>
-              <button className='ptf-contact-me-button min-w-[180px] '>
-                <HiLocationMarker className='text-lg dark:text-orange-400' />
-                <p>Ilorin, Nigeria</p>
-              </button>
-            </div>
-          </div>
-
+          <ContactInfo />
           {/* OR group */}
           <div className='w-full p-0.5 mt-4 flex items-center justify-center md:h-40 md:w-0.5 md:rounded-full md:mx-3 dark:md:bg-orange-400 md:bg-green-500'>
             <p className='p-2 rounded-full text-2xl md:text-lg text-green-500 dark:text-orange-400 text-center mb-3 sm:dark:bg-gray-800 sm:bg-slate-50 '>
