@@ -12,12 +12,12 @@ const Hero = ({ source_Serif_4 }) => {
 
       <section
         id='hero-section'
-        className='ptf-pri-section relative min-h-screen sm:min-h-135 flex flex-col sm:flex-row items-center justify-center sm:justify-normal bg-slate-50 dark:bg-gray-800 sm:bg-[url("/assets/img/hero-image.png")] bg-[length:494px_536px] bg-right-bottom bg-no-repeat overflow-hidden'
+        className='ptf-pri-section relative min-h-screen sm:min-h-135 flex flex-col sm:flex-row items-center justify-center sm:justify-normal bg-slate-50 dark:bg-gray-800 md:bg-[url("/assets/img/hero-image.png")] bg-[length:494px_536px] bg-right-bottom bg-no-repeat overflow-hidden'
       >
         {/* Skills logos */}
         <SkillsLogoGroup></SkillsLogoGroup>
         {/* Hero Image on small devices */}
-        <div className='h-5/6 w-5/6 sm:hidden flex items-center justify-center mb-12 relative'>
+        <div className='h-5/6 w-5/6 md:hidden flex items-center justify-center mb-12 relative'>
           <ImageBlob classnames='absolute opacity-30 dark:opacity-70 bottom-25'></ImageBlob>
           <Image
             src={`/assets/img/hero-image.png`}
