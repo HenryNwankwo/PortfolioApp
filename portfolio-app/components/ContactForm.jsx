@@ -1,10 +1,14 @@
 'use client';
-import { useFormik } from 'formik';
+import { useFormik, useState } from 'formik';
 import * as Yup from 'yup';
 import { BsSendFill } from 'react-icons/bs';
 import FormError from './FormError';
+import ClipLoader from 'react-spinners/ClipLoader';
+import { usePtfContext } from '@/utils/PtfContext';
 
 const ContactForm = () => {
+  const { theme } = usePtfContext();
+
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -20,8 +24,12 @@ const ContactForm = () => {
         .required('You cannot send an empty message!')
         .min(10, 'Message must be above 10 characters!'),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: (values, onSubmitProps) => {
+      console.log(JSON.stringify(values, null, 2));
+      //console.log('submitprops before: ', formik.isSubmitting);
+      onSubmitProps.setSubmitting(false);
+      //console.log('submitprops: ', onSubmitProps);
+      onSubmitProps.resetForm();
     },
   });
   return (
@@ -83,9 +91,22 @@ const ContactForm = () => {
         <div className='w-full'>
           <button
             type='submit'
-            className='mx-auto text-white py-3 px-4 dark:text-black rounded-full bg-gradient-to-br from-green-500 dark:from-orange-500 dark:hover:from-orange-400 to-blue-400 dark:to-yellow-300 dark:hover:to-yellow-200 hover:from-blue-400 hover:to-blue-300 w-full sm:w-fit flex justify-center items-center dark:text-medium sm:mr-0'
+            className='mx-auto text-white text-sm py-3 px-4 dark:text-black rounded-full bg-gradient-to-br from-green-500 dark:from-orange-500 dark:hover:from-orange-400 to-blue-400 dark:to-yellow-300 dark:hover:to-yellow-200 hover:from-blue-400 hover:to-blue-300 h-10 w-full sm:w-44 flex justify-center items-center dark:text-medium sm:mr-0'
+            disabled={!formik.isValid && formik.isSubmitting}
           >
-            Send Message <BsSendFill className='ml-2 text-xl' />
+            {formik.isSubmitting == true ? (
+              <ClipLoader
+                color={theme === 'light' ? '#ffffff' : '#555555'}
+                loading
+                size={15}
+                aria-label='Loading Spinner'
+                data-testid='loader'
+              />
+            ) : (
+              <>
+                Send Message <BsSendFill className='ml-2 text-xl' />
+              </>
+            )}
           </button>
         </div>
       </form>
