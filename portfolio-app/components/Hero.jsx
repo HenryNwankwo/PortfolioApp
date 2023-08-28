@@ -17,7 +17,7 @@ const Hero = ({ source_Serif_4 }) => {
         {/* Skills logos */}
         <SkillsLogoGroup></SkillsLogoGroup>
         {/* Hero Image on small devices */}
-        <div className='h-5/6 w-5/6 md:hidden flex items-center justify-center mb-12 relative'>
+        <div className='h-5/6 w-5/6 md:hidden sm:order-2 flex items-center justify-center mb-12 relative'>
           <ImageBlob classnames='absolute opacity-30 dark:opacity-70 bottom-25'></ImageBlob>
           <Image
             src={`/assets/img/hero-image.png`}
