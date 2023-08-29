@@ -1,13 +1,16 @@
 'use client';
-import { useFormik, useState } from 'formik';
+import { useRef } from 'react';
+import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { BsSendFill } from 'react-icons/bs';
 import FormError from './FormError';
 import ClipLoader from 'react-spinners/ClipLoader';
 import { usePtfContext } from '@/utils/PtfContext';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const { theme } = usePtfContext();
+  const contactFormRef = useRef(null);
 
   const formik = useFormik({
     initialValues: {
@@ -25,11 +28,29 @@ const ContactForm = () => {
         .min(10, 'Message must be above 10 characters!'),
     }),
     onSubmit: (values, onSubmitProps) => {
-      console.log(JSON.stringify(values, null, 2));
+      emailjs
+        .sendForm(
+          'service_7rzxafh', //YOUR_SERVICE_ID
+          'template_00wqtn1', //YOUR_TEMPLATE_ID
+          contactFormRef.current,
+          'UttqYeeitwKz-A96r' //YOUR_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            onSubmitProps.setSubmitting(false);
+            onSubmitProps.resetForm();
+            console.log(result.text);
+            console.log(JSON.stringify(result, null, 2));
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      //console.log(JSON.stringify(values, null, 2));
       //console.log('submitprops before: ', formik.isSubmitting);
-      onSubmitProps.setSubmitting(false);
+      //onSubmitProps.setSubmitting(false);
       //console.log('submitprops: ', onSubmitProps);
-      onSubmitProps.resetForm();
+      //onSubmitProps.resetForm();
     },
   });
   return (
@@ -37,6 +58,7 @@ const ContactForm = () => {
       <form
         className='w-full flex flex-col items-center justify-center py-4 px-2 gap-1.5 sm:ml-8'
         onSubmit={formik.handleSubmit}
+        ref={contactFormRef}
       >
         <p className='text-center mb-4'>
           You can write me a
