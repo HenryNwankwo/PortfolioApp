@@ -33,7 +33,9 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 portfolio-app/.env*.local
+portfolio-app/.env
 # vercel
 .vercel
 portfolio-app/.vercel
