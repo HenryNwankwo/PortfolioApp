@@ -7,6 +7,7 @@ import FormError from './FormError';
 import ClipLoader from 'react-spinners/ClipLoader';
 import { usePtfContext } from '@/utils/PtfContext';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 const ContactForm = () => {
   const { theme } = usePtfContext();
@@ -37,20 +38,25 @@ const ContactForm = () => {
         )
         .then(
           (result) => {
-            onSubmitProps.setSubmitting(false);
-            onSubmitProps.resetForm();
-            console.log(result.text);
-            console.log(JSON.stringify(result, null, 2));
+            if (result.status == 200) {
+              toast.success('Email sent successfully!', {
+                position: 'top-center',
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: theme,
+              });
+              onSubmitProps.setSubmitting(false);
+              onSubmitProps.resetForm();
+            }
           },
           (error) => {
             console.log(error.text);
           }
         );
-      //console.log(JSON.stringify(values, null, 2));
-      //console.log('submitprops before: ', formik.isSubmitting);
-      //onSubmitProps.setSubmitting(false);
-      //console.log('submitprops: ', onSubmitProps);
-      //onSubmitProps.resetForm();
     },
   });
   return (
