@@ -31,10 +31,10 @@ const ContactForm = () => {
     onSubmit: (values, onSubmitProps) => {
       emailjs
         .sendForm(
-          process.env.SERVICE_ID, //YOUR_SERVICE_ID
-          process.env.TEMPLATE_ID, //YOUR_TEMPLATE_ID
+          process.env.NEXT_PUBLIC_SERVICE_ID, //YOUR_SERVICE_ID
+          process.env.NEXT_PUBLIC_TEMPLATE_ID, //YOUR_TEMPLATE_ID
           contactFormRef.current,
-          process.env.PUBLIC_KEY //YOUR_PUBLIC_KEY
+          process.env.NEXT_PUBLIC_KEY //YOUR_PUBLIC_KEY
         )
         .then(
           (result) => {
