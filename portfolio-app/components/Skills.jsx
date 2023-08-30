@@ -13,7 +13,7 @@ const Skills = ({ source_Serif_4 }) => {
             Tools I work with
           </p>
         </div>
-        <div className='w-full sm:px-24 px-8 flex flex-wrap gap-6 justify-center items-center my-2'>
+        <div className='w-full sm:px-24 px-8 flex flex-wrap justify-center items-center my-2'>
           {skills.map((skill) => (
             <div className='ptf-skills-box' key={skill.id}>
               <Image

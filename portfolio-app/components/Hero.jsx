@@ -53,7 +53,7 @@ const Hero = ({ source_Serif_4 }) => {
             <BsTwitter className='ptf-social-links' />
           </Link>
           <Link href='#'>
-            <BsWhatsapp className='ptf-social-links lg:text-black' />
+            <BsWhatsapp className='ptf-social-links md:text-black' />
           </Link>
         </div>
       </section>

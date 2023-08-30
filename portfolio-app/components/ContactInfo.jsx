@@ -15,7 +15,7 @@ const ContactInfo = () => {
   };
   return (
     <>
-      <div className='w-full h-auto sm:h-fit flex flex-col sm:flex-row md:flex-col gap-3 items-center justify-center md:mr-7 '>
+      <div className='w-full h-auto sm:h-fit flex flex-col sm:flex-row md:flex-col sm:ptf-alt-left-gap-3 gap-3 items-center justify-center md:mr-7 '>
         {/* The email group */}
         <div className='flex flex-col w-full md:items-end'>
           <p className='dark:text-orange-400 text-left text-sm my-1 font-medium'>

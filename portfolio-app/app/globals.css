@@ -24,7 +24,7 @@
 /* Skills Section Styles */
 
 .ptf-skills-box {
-  @apply rounded-md w-44 h-44 py-4 shadow-lg shadow-transparent dark:shadow-none bg-gray-50 dark:bg-gray-800 flex justify-around items-center flex-col hover:cursor-pointer hover:text-black hover:bg-slate-100  dark:hover:bg-yellow-200 hover:transition-all hover:transform-gpu duration-200;
+  @apply rounded-md w-32 h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 py-4 m-2.5 shadow-lg shadow-transparent dark:shadow-none bg-gray-50 dark:bg-gray-800 flex justify-around items-center flex-col hover:cursor-pointer hover:text-black hover:bg-slate-100  dark:hover:bg-yellow-200 hover:transition-all hover:transform-gpu duration-200;
 }
 
 /* primary Section styles */
@@ -36,21 +36,28 @@
   @apply text-3xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200;
 }
 
-/* ptf gap alternatives */
+/***************************** 
+**** ptf gap alternatives ****
+*****************************/
 
 .ptf-alt-left-gap-2 > * + * {
   @apply ml-2;
 }
+.ptf-alt-top-gap-0 > * + * {
+  @apply mt-0;
+}
 .ptf-alt-top-gap-2 > * + * {
   @apply mt-2;
 }
-@media (min-width: 640px) {
-  .sm\:ptf-alt-top-gap-0 > * + * {
-    @apply mt-0;
-  }
+.ptf-alt-top-gap-3 > * + * {
+  @apply mt-3;
 }
+
 .ptf-alt-bottom-gap-2 > * + * {
   @apply mb-2;
+}
+.ptf-alt-bottom-gap-3 > * + * {
+  @apply mb-3;
 }
 .ptf-alt-right-gap-2 > * + * {
   @apply mr-2;
@@ -67,12 +74,160 @@
 .ptf-alt-right-gap-2\.5 > * + * {
   @apply mr-2.5;
 }
+/* Ptf small screen gap alt */
 
 @media (min-width: 640px) {
+  .sm\:ptf-alt-top-gap-0 > * + * {
+    @apply mt-0;
+  }
+  .sm\:ptf-alt-top-gap-1 > * + * {
+    @apply mt-1;
+  }
   .sm\:ptf-alt-top-gap-2 > * + * {
     @apply mt-2;
   }
+  .sm\:ptf-alt-top-gap-3 > * + * {
+    @apply mt-3;
+  }
+  .sm\:ptf-alt-top-gap-4 > * + * {
+    @apply mt-4;
+  }
+  .md\:ptf-alt-top-gap-5 > * + * {
+    @apply mt-5;
+  }
+  .sm\:ptf-alt-bottom-gap-0 > * + * {
+    @apply mb-0;
+  }
+  .sm\:ptf-alt-bottom-gap-1 > * + * {
+    @apply mb-1;
+  }
+  .sm\:ptf-alt-bottom-gap-2 > * + * {
+    @apply mb-2;
+  }
+  .sm\:ptf-alt-bottom-gap-3 > * + * {
+    @apply mb-3;
+  }
+  .sm\:ptf-alt-bottom-gap-4 > * + * {
+    @apply mb-4;
+  }
+  .sm\:ptf-alt-bottom-gap-5 > * + * {
+    @apply mb-5;
+  }
+  .sm\:ptf-alt-right-gap-0 > * + * {
+    @apply mr-0;
+  }
+  .sm\:ptf-alt-right-gap-1 > * + * {
+    @apply mr-1;
+  }
+  .sm\:ptf-alt-right-gap-2 > * + * {
+    @apply mr-2;
+  }
+  .sm\:ptf-alt-right-gap-3 > * + * {
+    @apply mr-3;
+  }
+  .sm\:ptf-alt-right-gap-4 > * + * {
+    @apply mr-4;
+  }
+  .sm\:ptf-alt-right-gap-5 > * + * {
+    @apply mr-5;
+  }
+  .sm\:ptf-alt-left-gap-0 > * + * {
+    @apply ml-0;
+  }
+  .sm\:ptf-alt-left-gap-1 > * + * {
+    @apply ml-1;
+  }
+  .sm\:ptf-alt-left-gap-2 > * + * {
+    @apply ml-2;
+  }
+  .sm\:ptf-alt-left-gap-3 > * + * {
+    @apply ml-3;
+  }
+  .sm\:ptf-alt-left-gap-4 > * + * {
+    @apply ml-4;
+  }
+  .sm\:ptf-alt-left-gap-5 > * + * {
+    @apply ml-5;
+  }
 }
+
+/* Ptf medium screen gap alt */
+
+@media (min-width: 768px) {
+  .md\:ptf-alt-top-gap-0 > * + * {
+    @apply mt-0;
+  }
+  .md\:ptf-alt-top-gap-1 > * + * {
+    @apply mt-1;
+  }
+  .md\:ptf-alt-top-gap-2 > * + * {
+    @apply mt-2;
+  }
+  .md\:ptf-alt-top-gap-3 > * + * {
+    @apply mt-3;
+  }
+  .md\:ptf-alt-top-gap-4 > * + * {
+    @apply mt-4;
+  }
+  .md\:ptf-alt-top-gap-5 > * + * {
+    @apply mt-5;
+  }
+  .md\:ptf-alt-bottom-gap-0 > * + * {
+    @apply mb-0;
+  }
+  .md\:ptf-alt-bottom-gap-1 > * + * {
+    @apply mb-1;
+  }
+  .md\:ptf-alt-bottom-gap-2 > * + * {
+    @apply mb-2;
+  }
+  .md\:ptf-alt-bottom-gap-3 > * + * {
+    @apply mb-3;
+  }
+  .md\:ptf-alt-bottom-gap-4 > * + * {
+    @apply mb-4;
+  }
+  .md\:ptf-alt-bottom-gap-5 > * + * {
+    @apply mb-5;
+  }
+  .md\:ptf-alt-right-gap-0 > * + * {
+    @apply mr-0;
+  }
+  .md\:ptf-alt-right-gap-1 > * + * {
+    @apply mr-1;
+  }
+  .md\:ptf-alt-right-gap-2 > * + * {
+    @apply mr-2;
+  }
+  .md\:ptf-alt-right-gap-3 > * + * {
+    @apply mr-3;
+  }
+  .md\:ptf-alt-right-gap-4 > * + * {
+    @apply mr-4;
+  }
+  .md\:ptf-alt-right-gap-5 > * + * {
+    @apply mr-5;
+  }
+  .md\:ptf-alt-left-gap-0 > * + * {
+    @apply ml-0;
+  }
+  .md\:ptf-alt-left-gap-1 > * + * {
+    @apply ml-1;
+  }
+  .md\:ptf-alt-left-gap-2 > * + * {
+    @apply ml-2;
+  }
+  .md\:ptf-alt-left-gap-3 > * + * {
+    @apply ml-3;
+  }
+  .md\:ptf-alt-left-gap-4 > * + * {
+    @apply ml-4;
+  }
+  .md\:ptf-alt-left-gap-5 > * + * {
+    @apply ml-5;
+  }
+}
+
 /* Experience Section Styles */
 
 .ptf-year-tagTriangle {
