@@ -6,7 +6,7 @@ import { testimonialItems } from '@/app/content';
 const PtfContext = createContext();
 
 export const PtfProvider = ({ children }) => {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
   const [activeIndex, setActiveIndex] = useState(0);
 
   //Updating the carousel index

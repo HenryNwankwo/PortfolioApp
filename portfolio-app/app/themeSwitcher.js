@@ -22,7 +22,7 @@ export default function ThemeSwitcher() {
 
   return (
     <button
-      className='p-2 flex justify-center items-center -mr-4 sm:-mr-0'
+      className='p-2 flex justify-center items-center -mr-1 sm:-mr-0'
       onClick={themeSwitchHandler}
     >
       {theme === 'dark' ? (

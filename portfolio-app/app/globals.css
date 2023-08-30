@@ -1,3 +1,4 @@
+/* autoprefixer grid: autoplace */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,7 +32,47 @@
 .ptf-pri-section {
   @apply w-full max-w-full h-auto sm:px-24 px-8 sm:py-16 py-11 pt-20;
 }
+.ptf-social-links {
+  @apply text-3xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200;
+}
 
+/* ptf gap alternatives */
+
+.ptf-alt-left-gap-2 > * + * {
+  @apply ml-2;
+}
+.ptf-alt-top-gap-2 > * + * {
+  @apply mt-2;
+}
+@media (min-width: 640px) {
+  .sm\:ptf-alt-top-gap-0 > * + * {
+    @apply mt-0;
+  }
+}
+.ptf-alt-bottom-gap-2 > * + * {
+  @apply mb-2;
+}
+.ptf-alt-right-gap-2 > * + * {
+  @apply mr-2;
+}
+.ptf-alt-left-gap-2\.5 > * + * {
+  @apply ml-2.5;
+}
+.ptf-alt-top-gap-2\.5 > * + * {
+  @apply mt-2.5;
+}
+.ptf-alt-bottom-gap-2\.5 > * + * {
+  @apply mb-2.5;
+}
+.ptf-alt-right-gap-2\.5 > * + * {
+  @apply mr-2.5;
+}
+
+@media (min-width: 640px) {
+  .sm\:ptf-alt-top-gap-2 > * + * {
+    @apply mt-2;
+  }
+}
 /* Experience Section Styles */
 
 .ptf-year-tagTriangle {
@@ -53,6 +94,6 @@
 .ptf-contact-me-button {
   @apply px-4 py-3 w-full sm:w-fit  bg-gradient-to-br from-green-500 dark:from-slate-900 to-blue-500 dark:to-gray-950 rounded-lg flex gap-2 text-white items-center hover:to-blue-800 transition-all duration-200;
 }
-.ptf-contact-input{
+.ptf-contact-input {
   @apply w-full px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-900 outline-none placeholder:text-sm focus:shadow focus:shadow-slate-100 dark:focus:shadow-slate-800;
 }

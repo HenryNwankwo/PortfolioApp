@@ -43,18 +43,18 @@ const Contact = ({ source_Serif_4 }) => {
         {/* The Social Icons */}
         <div className='flex justify-between w-full items-center absolute -bottom-2 sm:-bottom-2'>
           <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>
-          <div className='flex items-center justify-center gap-3'>
+          <div className='flex items-center justify-center ptf-alt-left-gap-2 gap-3'>
             <Link href='#' target='_blank'>
-              <BsGithub className='text-xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
+              <BsGithub className='ptf-social-links' />
             </Link>
             <Link href='#' target='_blank'>
-              <BsTwitter className='text-xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
+              <BsTwitter className='ptf-social-links' />
             </Link>
             <Link href='#' target='_blank'>
-              <BsLinkedin className='text-xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
+              <BsLinkedin className='ptf-social-links' />
             </Link>
             <Link href='#' target='_blank'>
-              <BsWhatsapp className='text-xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200' />
+              <BsWhatsapp className='ptf-social-links' />
             </Link>
           </div>
           <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>
