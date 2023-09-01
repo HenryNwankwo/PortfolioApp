@@ -14,7 +14,7 @@ const ContactInfo = () => {
     <>
       <div className='w-full h-auto flex flex-col items-center justify-center md:mr-7'>
         {/* The email group */}
-        <div className='flex flex-col w-full m-1.5'>
+        <div className='flex flex-col w-full m-1.5 lg:items-end'>
           <p className='dark:text-orange-400 text-left text-sm my-1 font-medium'>
             Email Me
           </p>
@@ -27,7 +27,7 @@ const ContactInfo = () => {
 
         {/* The phone group */}
 
-        <div className='flex flex-col w-full m-1.5'>
+        <div className='flex flex-col w-full m-1.5 lg:items-end'>
           <p className='dark:text-orange-400 text-left text-sm my-1 font-medium'>
             Prefer Calling?
           </p>
@@ -40,7 +40,7 @@ const ContactInfo = () => {
 
         {/* The location group */}
 
-        <div className='flex flex-col w-full m-1.5'>
+        <div className='flex flex-col w-full m-1.5 lg:items-end'>
           <p className='dark:text-orange-400 text-left text-sm my-1 font-medium'>
             Location
           </p>
