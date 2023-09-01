@@ -42,7 +42,7 @@ const Hero = ({ source_Serif_4 }) => {
           </button>
         </div>
         {/* Social links */}
-        <div className='flex sm:flex-col relative mt-4 sm:mt-0 ptf-alt-left-gap-2 sm:ptf-alt-top-gap-2 gap-2.5 h-fit w-fit justify-center items-center text-lg sm:absolute before:hidden sm:before:flex sm:right-10 before:absolute before:-top-20 before:mb-2 before:h-20 before:w-0.5 before:bg-green-500 dark:before:bg-orange-400'>
+        <div className='flex sm:flex-col relative mt-6 sm:mt-0 h-fit w-fit justify-center items-center text-lg sm:absolute before:hidden sm:before:flex sm:right-10 before:absolute before:-top-20 before:mb-2 before:h-20 before:w-0.5 before:bg-green-500 dark:before:bg-orange-400'>
           <Link href='#'>
             <BsGithub className='sm:mt-2 ptf-social-links' />
           </Link>

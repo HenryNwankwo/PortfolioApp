@@ -43,7 +43,7 @@ const Contact = ({ source_Serif_4 }) => {
         {/* The Social Icons */}
         <div className='flex justify-between w-full items-center absolute -bottom-2 sm:-bottom-2'>
           <span className='block h-0.5 w-1/5 sm:w-1/3 bg-gradient-to-br from-green-500 to-blue-500 dark:from-red-500 dark:to-orange-400'></span>
-          <div className='flex items-center justify-center ptf-alt-left-gap-2 gap-3'>
+          <div className='flex items-center justify-center'>
             <Link href='#' target='_blank'>
               <BsGithub className='ptf-social-links' />
             </Link>

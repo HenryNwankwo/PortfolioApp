@@ -33,7 +33,7 @@
   @apply w-full max-w-full h-auto sm:px-24 px-8 sm:py-16 py-11 pt-20;
 }
 .ptf-social-links {
-  @apply text-3xl hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200;
+  @apply text-4xl md:text-3xl m-2 hover:text-gray-600 dark:hover:text-yellow-300 transition-all duration-200;
 }
 
 /***************************** 
