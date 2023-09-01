@@ -3,15 +3,12 @@ import { HiLocationMarker, HiMail, HiPhone } from 'react-icons/hi';
 import { HiMiniArrowTopRightOnSquare } from 'react-icons/hi2';
 
 const ContactInfo = () => {
-  const phoneNumber = '+2347069782561';
-  const recipentEmail = 'nwankwohenry29@gmail.com';
-
   const handlePhoneCall = () => {
-    window.location.href = `tel:${phoneNumber}`;
+    window.location.href = `tel:${process.env.NEXT_PUBLIC_PHONE_NUMBER}`;
   };
 
   const handleEmail = () => {
-    window.location.href = `mailto:${recipentEmail}`;
+    window.location.href = `mailto:${process.env.NEXT_PUBLIC_EMAIL}`;
   };
   return (
     <>
@@ -22,7 +19,8 @@ const ContactInfo = () => {
             Email Me
           </p>
           <button className='ptf-contact-me-button' onClick={handleEmail}>
-            <HiMail className='text-lg dark:text-orange-400' /> mymail@gmail.com
+            <HiMail className='text-lg dark:text-orange-400' />{' '}
+            {process.env.NEXT_PUBLIC_EMAIL}
             <HiMiniArrowTopRightOnSquare className='text-lg dark:text-orange-400' />
           </button>
         </div>
@@ -35,7 +33,7 @@ const ContactInfo = () => {
           </p>
           <button className='ptf-contact-me-button' onClick={handlePhoneCall}>
             <HiPhone className='text-lg dark:text-orange-400' />
-            +2347069782561
+            {process.env.NEXT_PUBLIC_PHONE_NUMBER}
             <HiMiniArrowTopRightOnSquare className='text-lg dark:text-orange-400' />
           </button>
         </div>
@@ -48,7 +46,7 @@ const ContactInfo = () => {
           </p>
           <button className='ptf-contact-me-button min-w-[180px] '>
             <HiLocationMarker className='text-lg dark:text-orange-400' />
-            <p>Ilorin, Nigeria</p>
+            <p>{process.env.NEXT_PUBLIC_LOCATION}</p>
           </button>
         </div>
       </div>
