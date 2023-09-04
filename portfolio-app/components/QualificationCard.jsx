@@ -1,11 +1,14 @@
 import React from 'react';
 
-const QualificationCard = ({year, description, title, location}) => {
+const QualificationCard = ({ key, year, description, title, location }) => {
   return (
     <>
       {/* Qualification Card group */}
 
-      <div className='w-full h-auto min-h-fit flex justify-center my-4 '>
+      <div
+        className='w-full h-auto min-h-fit flex justify-center my-4 '
+        key={key}
+      >
         <div className='bg-gradient-to-b from-green-500 to-blue-500 dark:from-orange-400 dark:to-yellow-400 py-0.5 px-1.5 sm:py-1 sm:px-3 h-fit text-white dark:text-black dark:font-medium shadow-lg shadow-transparent relative rounded-full mr-1 sm:mr-2 ptf-year-tagTriangle'>
           <p className='text-sm sm:text-base'>{year}</p>
         </div>
@@ -20,9 +23,7 @@ const QualificationCard = ({year, description, title, location}) => {
           <p className='text-red-400 text-sm sm:text-base dark:text-yellow-200'>
             {location}
           </p>
-          <p className='mt-3 text-xs dark:text-gray-300'>
-            {description}
-          </p>
+          <p className='mt-3 text-xs dark:text-gray-300'>{description}</p>
         </div>
       </div>
     </>
