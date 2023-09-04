@@ -7,7 +7,7 @@ const Experience = ({ source_Serif_4 }) => {
 
   return (
     <>
-      {/* The Experience section */}
+      {/* The Qualification section */}
 
       <section
         id='experience'
