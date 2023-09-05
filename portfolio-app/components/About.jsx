@@ -1,3 +1,4 @@
+import { devInfo } from '@/app/content';
 const About = ({ source_Serif_4 }) => {
   return (
     <>
@@ -15,12 +16,8 @@ const About = ({ source_Serif_4 }) => {
           </p>
         </div>
         <div className='mt-4 flex flex-row w-full'>
-          <span className='block border-t-2 border-solid border-green-500 dark:border-orange-400 sm:w-12 w-32 mt-2 mr-2'></span>
-          <p className='pa_aboutText '>
-            I like to craft solid and scalable frontend products with great user
-            experiences. I build accessible, inclusive products and digital
-            experiences for the web.
-          </p>
+          <span className='block border-t-2 border-solid border-green-500 dark:border-orange-400 w-32 mt-2 mr-2'></span>
+          <p className='pa_aboutText '>{devInfo.about_me}</p>
         </div>
       </section>
     </>
