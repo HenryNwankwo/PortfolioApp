@@ -31,15 +31,20 @@ const Hero = ({ source_Serif_4 }) => {
         <div className='sm:justify-start flex flex-col justify-center items-center sm:items-start '>
           <h5 className='text-2xl md:text-4xl mb-2 text-center sm:text-left font-bold text-slate-800 dark:text-slate-300'>
             Hi, I am{' '}
-            <span className='text-5xl md:text-7xl bg-gradient-to-tr  from-green-500 to-blue-400 dark:from-orange-400 dark:to-yellow-300 text-transparent bg-clip-text py-3 font-bold'>
+            <span className='text-5xl lg:text-7xl bg-gradient-to-tr  from-green-500 to-blue-400 dark:from-orange-400 dark:to-yellow-300 text-transparent bg-clip-text py-3 font-bold'>
               Henry
             </span>
           </h5>
           <p className='text-lg my-2 text-slate-800 dark:text-slate-300 text-center sm:text-left font-medium '>
             {devInfo.job_Title}
           </p>
-          <p className='my-2 px-3 sm:px-0 text-slate-800 text-sm font-medium w-full md:w-2/4 lg:w-2/5 dark:text-slate-300 text-center sm:text-left'>
-            {devInfo.job_description}
+          <p className='my-2 px-3 sm:px-0 text-slate-800 text-sm font-medium w-full md:w-2/4 dark:text-slate-300 text-center sm:text-left'>
+            I build efficient
+            <span className='text-green-500 dark:text-orange-400 text-base'>
+              &nbsp;user-centered SEO&nbsp;
+            </span>
+            optimized applications and transform raw data into actionable
+            insights.
           </p>
           <p className='my-2 text-gray-800 text-sm font-medium w-full md:w-2/4 lg:w-2/5 dark:text-slate-300 text-center sm:text-left'>
             {devInfo.tagLine}
