@@ -144,8 +144,6 @@ export const testimonialItems = [
 
 export const devInfo = {
   job_Title: 'Software Developer | Data Analyst',
-  job_description:
-    'I build efficient <span className="text-green-500 dark:text-orange-400"> pixel perfect and user-friendly SEO </span> optimized applications. I also transform raw data into actionable insights to drive business growth and strategy. ',
   tagLine: 'Want to take your brand to the next level?',
   about_me:
     'Highly motivated and detail-oriented Software developer and Analyst with 2-3 years of experience in building scalable web applications using variety of technologies such as NodeJS, Javascript and React. I also aid teams and businesses in making data driven decisions through data analytics. Possesses a strong problem solving ability and a passion for working on challenging projects. Committed to writing clean, maintainable, and efficient code. A dedicated team player eager to add value into any team I am part of and equally has the drive to continue growing and learning.',
@@ -154,7 +152,7 @@ export const devInfo = {
 export const educationItems = [
   {
     id: 1,
-    year: new Date(2019),
+    year: 2019,
     title: 'Bsc, Computer Science',
     location: 'University of Nigeria, Nsukka',
     description:
@@ -162,7 +160,7 @@ export const educationItems = [
   },
   {
     id: 2,
-    year: new Date(2023),
+    year: 2023,
     title: 'Certified Google Data Analyst',
     location: 'Coursera E-learning Platform',
     description:
@@ -173,7 +171,7 @@ export const educationItems = [
 export const experienceItems = [
   {
     id: 1,
-    year: new Date('Aug, 2017') - new Date('Nov, 2017'),
+    year: 2017,
     title: 'Frontend Developer (Intern)',
     location: 'Codextreme Programming Limited',
     description:
