@@ -11,7 +11,7 @@ function ProjectCard({
   tags,
 }) {
   return (
-    <div className='w-60 h-auto m-3 shadow-lg shadow-slate-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group transition-all transform duration-300 relative'>
+    <div className='flex-1 w-60 h-auto m-3 break-inside-avoid shadow-lg shadow-slate-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group transition-all transform duration-300 relative'>
       <div className='w-full'>
         <Image
           src={imageSrc}

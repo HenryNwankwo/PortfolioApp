@@ -16,19 +16,21 @@ const Portfolio = ({ source_Serif_4 }) => {
             Some past works
           </p>
         </div>
-        <div className='w-fit flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:justify-items-center md:content-center m-2'>
-          {projectInfo.map((project) => (
-            <ProjectCard
-              key={project.id}
-              description={project.description}
-              name={project.name}
-              imageAlt={project.imgAlt}
-              imageSrc={project.imgScr}
-              githubUrl={project.githubUrl}
-              previewUrl={project.previewUrl}
-              tags={project.tags}
-            />
-          ))}
+        <div className='w-fit flex flex-wrap justify-center items-start m-2 md:w-3/4 xl:w-1/2 md:mx-auto'>
+          <div className='sm:columns-2 lg:columns-3 space-y-8'>
+            {projectInfo.map((project) => (
+              <ProjectCard
+                key={project.id}
+                description={project.description}
+                name={project.name}
+                imageAlt={project.imgAlt}
+                imageSrc={project.imgScr}
+                githubUrl={project.githubUrl}
+                previewUrl={project.previewUrl}
+                tags={project.tags}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </>
