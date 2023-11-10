@@ -178,3 +178,49 @@ export const experienceItems = [
       'Worked alongside core development team to build user-friendly and experience filled frontend products using frontend development tools.',
   },
 ];
+
+export const projectInfo = [
+  {
+    id: 1,
+    imgScr:
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1699516201/projects-images/xtrata_ev8jpq.png',
+    imgAlt: 'Xtrata app image',
+    description:
+      'A web app that reads a series of transaction files uploaded, extracts lines of text that fails a certain criteria and writes the extracted lines to a new version of each file.',
+    name: 'Xtrata',
+    previewUrl: 'https://xtrata.vercel.app',
+    githubUrl: 'https://github.com/HenryNwankwo/xtrata',
+  },
+  {
+    id: 2,
+    imgScr:
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1699516189/projects-images/contactmgr_hsyguj.png',
+    imgAlt: 'Contactmgr API image',
+    description: 'An API for contacts management.',
+    name: 'Contactmgr API',
+    previewUrl: 'https://contactmgr.onrender.com',
+    githubUrl: 'https://github.com/HenryNwankwo/contactmgr-api',
+  },
+  {
+    id: 3,
+    imgScr:
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1699516211/projects-images/portfolio2_ai5lys.png',
+    imgAlt: 'An image of a portfolio app',
+    description:
+      'A portfolio application that displays the information and track records of its owner.',
+    name: 'Portfolio App',
+    previewUrl: 'https://henrynwankwo.vercel.app',
+    githubUrl: 'https://github.com/HenryNwankwo/PortfolioApp',
+  },
+  {
+    id: 4,
+    imgScr:
+      'https://res.cloudinary.com/dxrmhv6fy/image/upload/v1699516355/projects-images/promptia_bi7snu.png',
+    imgAlt: 'Promptia image',
+    description:
+      'Promptia is an open source AI prompting tool for discovering, creating and sharing creative prompts',
+    name: 'Promptia',
+    previewUrl: 'https://promptia-eta.vercel.app',
+    githubUrl: 'https://github.com/HenryNwankwo/Promptia',
+  },
+];

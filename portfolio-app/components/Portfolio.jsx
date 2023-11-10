@@ -1,4 +1,5 @@
 import ProjectCard from './ProjectCard';
+import { projectInfo } from '@/app/content';
 
 const Portfolio = ({ source_Serif_4 }) => {
   return (
@@ -16,7 +17,17 @@ const Portfolio = ({ source_Serif_4 }) => {
           </p>
         </div>
         <div className='w-fit flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:justify-items-center md:content-center m-2'>
-          <ProjectCard />
+          {projectInfo.map((project) => (
+            <ProjectCard
+              key={project.id}
+              description={project.description}
+              name={project.name}
+              imageAlt={project.imgAlt}
+              imageSrc={project.imgScr}
+              githubUrl={project.githubUrl}
+              previewUrl={project.previewUrl}
+            />
+          ))}
         </div>
       </section>
     </>
