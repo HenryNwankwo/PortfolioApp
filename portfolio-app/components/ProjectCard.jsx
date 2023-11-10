@@ -27,7 +27,7 @@ function ProjectCard({
           {name || ''}
         </h3>
         <p className='text-xs text-center'>{description || ''}</p>
-        <div className='flex justify-between items-center w-full px-2'>
+        <div className='flex justify-between items-center w-full'>
           <Link
             href={previewUrl || '/'}
             target='_blank'
