@@ -190,6 +190,7 @@ export const projectInfo = [
     name: 'Xtrata',
     previewUrl: 'https://xtrata.vercel.app',
     githubUrl: 'https://github.com/HenryNwankwo/xtrata',
+    tags: ['reactjs', 'context API', 'nextjs13', 'tailwindcss', 'chakra-ui'],
   },
   {
     id: 2,
@@ -200,6 +201,7 @@ export const projectInfo = [
     name: 'Contactmgr API',
     previewUrl: 'https://contactmgr.onrender.com',
     githubUrl: 'https://github.com/HenryNwankwo/contactmgr-api',
+    tags: ['nodejs', 'mongodb', 'express'],
   },
   {
     id: 3,
@@ -211,6 +213,7 @@ export const projectInfo = [
     name: 'Portfolio App',
     previewUrl: 'https://henrynwankwo.vercel.app',
     githubUrl: 'https://github.com/HenryNwankwo/PortfolioApp',
+    tags: ['reactjs', 'context API', 'nextjs13', 'tailwindcss'],
   },
   {
     id: 4,
@@ -222,5 +225,13 @@ export const projectInfo = [
     name: 'Promptia',
     previewUrl: 'https://promptia-eta.vercel.app',
     githubUrl: 'https://github.com/HenryNwankwo/Promptia',
+    tags: [
+      'reactjs',
+      'nextjs13',
+      'tailwindcss',
+      'mongodb',
+      'nodejs',
+      'express',
+    ],
   },
 ];

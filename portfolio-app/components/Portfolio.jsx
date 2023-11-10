@@ -26,6 +26,7 @@ const Portfolio = ({ source_Serif_4 }) => {
               imageSrc={project.imgScr}
               githubUrl={project.githubUrl}
               previewUrl={project.previewUrl}
+              tags={project.tags}
             />
           ))}
         </div>

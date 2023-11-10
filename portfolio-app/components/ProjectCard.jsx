@@ -8,6 +8,7 @@ function ProjectCard({
   previewUrl,
   imageAlt,
   imageSrc,
+  tags,
 }) {
   return (
     <div className='w-60 h-auto m-3 shadow-lg shadow-slate-200 dark:shadow-none bg-white dark:bg-gray-800 rounded-md hover:cursor-pointer group transition-all transform duration-300 relative'>
@@ -43,10 +44,16 @@ function ProjectCard({
           </Link>
         </div>
       </div>
-      <div className='w-full h-auto min-h-[50px] flex flex-wrap justify-center items-center bg-green-300 dark:bg-orange-400 rounded-b-md p-1.5 pb-0.5'>
-        <p className='px-2 py-1 rounded-xl mr-1 bg-slate-50 bg-opacity-40 dark:bg-opacity-30 mb-1.5 dark:text-gray-800 text-center text-sm'>
-          tag
-        </p>
+
+      <div className='w-full h-auto min-h-[50px] flex flex-wrap justify-center items-center bg-gradient-to-tr from-green-300 to-blue-300 dark:from-orange-400 dark:to-yellow-400 rounded-b-md p-2 pb-0.5'>
+        {tags?.map((item, index) => (
+          <p
+            className='px-2 py-1 rounded-2xl mr-1 bg-white bg-opacity-50 text-gray-800 font-semibold dark:bg-opacity-30 mb-1.5 dark:text-gray-800 text-center text-[0.75rem]'
+            key={index}
+          >
+            {item}
+          </p>
+        ))}
       </div>
     </div>
   );
