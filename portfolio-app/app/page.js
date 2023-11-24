@@ -19,7 +19,7 @@ export default function Home() {
       <Skills source_Serif_4={source_Serif_4}></Skills>
       <Portfolio source_Serif_4={source_Serif_4}></Portfolio>
       <Qualification source_Serif_4={source_Serif_4}></Qualification>
-      <Testimonials source_Serif_4={source_Serif_4}></Testimonials>
+      {/* <Testimonials source_Serif_4={source_Serif_4}></Testimonials> */}
       <Contact source_Serif_4={source_Serif_4}></Contact>
       <Footer dancing_script={dancing_script}></Footer>
     </MainContainer>
